@@ -1,0 +1,22 @@
+Data and figures: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 QuantumNovice
+
+The contents of data/, figures/ and docs/ are licensed under CC BY 4.0.
+You may share and adapt them for any purpose, including commercially, as long
+as you give appropriate credit, link to the license, and indicate if changes
+were made.
+
+Suggested credit:
+  "The Allowed Universe" by QuantumNovice, CC BY 4.0,
+  https://github.com/QuantumNovice/the-allowed-universe
+
+Individual values come from the primary sources listed in each row's
+source_url and citation columns (collected in docs/REFERENCES.md); please cite
+those sources too when you reuse a specific number.
+
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary:         https://creativecommons.org/licenses/by/4.0/
+
+The source code (src/, tests/, tools/) is licensed separately under the MIT
+License; see LICENSE.
