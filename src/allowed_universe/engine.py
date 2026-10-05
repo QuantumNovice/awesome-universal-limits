@@ -328,6 +328,11 @@ def violations(spec: ChartSpec, rtol: float = 1e-6):
     return bad
 
 
+def _sig(v) -> float:
+    """12 significant digits: plenty for a log-log plot, and stable across platforms' last-ulp libm noise."""
+    return float(f"{float(v):.12g}")
+
+
 def sample_lines(spec: ChartSpec, n: int = 200):
     """Sampled points of every line, for the web site's limits.json."""
     out = []
@@ -346,6 +351,6 @@ def sample_lines(spec: ChartSpec, n: int = 200):
         if line.x is not None:
             entry["x"] = float(line.x)
         else:
-            entry["points"] = [[float(a), float(b)] for a, b in zip(xs, line.values(xs), strict=False)]
+            entry["points"] = [[_sig(a), _sig(b)] for a, b in zip(xs, line.values(xs), strict=False)]
         out.append(entry)
     return out
