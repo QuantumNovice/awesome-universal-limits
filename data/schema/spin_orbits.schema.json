@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/spin_orbits.schema.json",
+  "title": "Orbit tracks for the spin chart",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique id.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "track": {
+      "description": "Points with the same track are joined by a curve.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "description": "Label.",
+      "type": "string",
+      "minLength": 1
+    },
+    "mass_kg": {
+      "description": "Central (or total) mass, kg.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "size_m": {
+      "description": "Orbit diameter 2a, m.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "freq_hz": {
+      "description": "Orbital frequency, Hz.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "source_url": {
+      "description": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "citation": {
+      "description": "Short citation: authors, year, title, venue.",
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "description": "One line shown in the hover tooltip.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "track",
+    "name",
+    "source_url",
+    "citation"
+  ],
+  "additionalProperties": false
+}

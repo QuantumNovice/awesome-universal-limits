@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/speed.schema.json",
+  "title": "Speed vs size",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique id.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "description": "Label.",
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "description": "Object class.",
+      "type": "string",
+      "enum": [
+        "particle",
+        "molecular",
+        "living",
+        "human",
+        "astro",
+        "lab"
+      ]
+    },
+    "size_m": {
+      "description": "Size (length or diameter), m.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "speed_low_m_s": {
+      "description": "Lowest known speed of the class.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "speed_high_m_s": {
+      "description": "Highest known speed of the class.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "speed_example_m_s": {
+      "description": "Speed of the marked example object.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "speed_max_m_s": {
+      "description": "Maximum allowable speed; empty if none.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "max_basis": {
+      "description": "Physics behind the maximum.",
+      "enum": [
+        "light",
+        "escape",
+        "material",
+        "none",
+        null
+      ]
+    },
+    "source_url": {
+      "description": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "citation": {
+      "description": "Short citation: authors, year, title, venue.",
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "description": "One line shown in the hover tooltip.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "source_url",
+    "citation"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,8 @@
+id,name,category,size_m,pressure_low_pa,pressure_high_pa,pressure_example_pa,pressure_max_pa,max_basis,source_url,citation,notes
+ism,Interstellar gas,astro,3.0857e16,,,5.2e-14,,,https://doi.org/10.1088/0004-637X/734/1/65,"Jenkins E.B. & Tripp T.M. (2011) The distribution of thermal pressures in the diffuse, cold neutral medium of our galaxy. ApJ 734, 65",P/k about 3800 K per cm3
+mars,Mars surface,earth,6.7792e6,,,636,,,https://nssdc.gsfc.nasa.gov/planetary/factsheet/,"Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",6.36 mbar
+earth,Earth (surface to centre),earth,1.2742e7,101325,3.64e11,101325,,,https://doi.org/10.1016/0031-9201(81)90046-7,"Dziewonski A.M. & Anderson D.L. (1981) Preliminary reference Earth model. Phys Earth Planet Inter 25, 297",1 atm at sea level to 364 GPa at the centre
+venus,Venus surface,earth,1.2104e7,,,9.2e6,,,https://nssdc.gsfc.nasa.gov/planetary/factsheet/,"Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",92 bar
+diamond-anvil,Diamond anvil cell record,lab,1e-5,,,1e12,,,https://doi.org/10.1126/sciadv.1600341,"Dubrovinskaia N. et al. (2016) Terapascal static pressure generation with ultrahigh yield strength nanodiamond. Science Advances 2, e1600341",Static pressure above 1 TPa
+sun,Sun's core,astro,1.3914e9,,,2.477e16,,,https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html,"Williams D.R., NASA Sun Fact Sheet, NSSDCA (2024)",2.477e11 bar at the centre
+proton,Inside the proton,particle,1.6815e-15,,,1e35,,,https://doi.org/10.1038/s41586-018-0060-z,"Burkert V.D., Elouadrhiri L. & Girod F.X. (2018) The pressure distribution inside the proton. Nature 557, 396",Peak near the centre: higher than in neutron stars

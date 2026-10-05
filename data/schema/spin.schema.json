@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/spin.schema.json",
+  "title": "Spin rate vs size",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique id.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "description": "Label shown on the plot.",
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "description": "Object class.",
+      "type": "string",
+      "enum": [
+        "molecular",
+        "living",
+        "human",
+        "astro",
+        "orbit"
+      ]
+    },
+    "size_m": {
+      "description": "Diameter in metres.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "slowest_hz": {
+      "description": "Slowest known member of the class, Hz.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "fastest_hz": {
+      "description": "Fastest known member, Hz.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "example_hz": {
+      "description": "Value of the marked example object, Hz.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "max_hz": {
+      "description": "Maximum allowable spin (breakup), Hz; empty if none.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "max_basis": {
+      "description": "Physics behind max_hz.",
+      "enum": [
+        "material",
+        "gravity",
+        "black-hole",
+        "quantum",
+        "centrifugal-dissociation",
+        null
+      ]
+    },
+    "source_url": {
+      "description": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "citation": {
+      "description": "Short citation: authors, year, title, venue.",
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "description": "One line shown in the hover tooltip.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "source_url",
+    "citation"
+  ],
+  "additionalProperties": false
+}

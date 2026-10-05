@@ -1,0 +1,216 @@
+{
+ "dataset": "spin_orbits",
+ "title": "Orbit tracks for the spin chart",
+ "license": "CC-BY-4.0",
+ "columns": {
+  "id": "Unique id.",
+  "track": "Points with the same track are joined by a curve.",
+  "name": "Label.",
+  "mass_kg": "Central (or total) mass, kg.",
+  "size_m": "Orbit diameter 2a, m.",
+  "freq_hz": "Orbital frequency, Hz.",
+  "source_url": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+  "citation": "Short citation: authors, year, title, venue.",
+  "notes": "One line shown in the hover tooltip."
+ },
+ "rows": [
+  {
+   "id": "mercury",
+   "track": "planets",
+   "name": "Mercury",
+   "mass_kg": 1.9884100000000003e+30,
+   "size_m": 115818000000.0,
+   "freq_hz": 1.3157e-07,
+   "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+   "citation": "Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",
+   "notes": "Orbital period 87.969 d"
+  },
+  {
+   "id": "venus",
+   "track": "planets",
+   "name": "Venus",
+   "mass_kg": 1.9884100000000003e+30,
+   "size_m": 216418000000.0,
+   "freq_hz": 5.1509e-08,
+   "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+   "citation": "Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",
+   "notes": "Orbital period 224.701 d"
+  },
+  {
+   "id": "earth",
+   "track": "planets",
+   "name": "Earth",
+   "mass_kg": 1.9884100000000003e+30,
+   "size_m": 299196000000.0,
+   "freq_hz": 3.1688e-08,
+   "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+   "citation": "Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",
+   "notes": "Orbital period 365.256 d"
+  },
+  {
+   "id": "mars",
+   "track": "planets",
+   "name": "Mars",
+   "mass_kg": 1.9884100000000003e+30,
+   "size_m": 455878000000.0,
+   "freq_hz": 1.6848e-08,
+   "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+   "citation": "Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",
+   "notes": "Orbital period 686.980 d"
+  },
+  {
+   "id": "jupiter",
+   "track": "planets",
+   "name": "Jupiter",
+   "mass_kg": 1.9884100000000003e+30,
+   "size_m": 1556950000000.0,
+   "freq_hz": 2.6714e-09,
+   "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+   "citation": "Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",
+   "notes": "Orbital period 4332.59 d"
+  },
+  {
+   "id": "saturn",
+   "track": "planets",
+   "name": "Saturn",
+   "mass_kg": 1.9884100000000003e+30,
+   "size_m": 2867070000000.0,
+   "freq_hz": 1.0757e-09,
+   "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+   "citation": "Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",
+   "notes": "Orbital period 10759.22 d"
+  },
+  {
+   "id": "uranus",
+   "track": "planets",
+   "name": "Uranus",
+   "mass_kg": 1.9884100000000003e+30,
+   "size_m": 5741940000000.0,
+   "freq_hz": 3.7719e-10,
+   "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+   "citation": "Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",
+   "notes": "Orbital period 30685.4 d"
+  },
+  {
+   "id": "neptune",
+   "track": "planets",
+   "name": "Planet orbits",
+   "mass_kg": 1.9884100000000003e+30,
+   "size_m": 8996820000000.0,
+   "freq_hz": 1.923e-10,
+   "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+   "citation": "Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",
+   "notes": "Neptune: orbital period 60189 d"
+  },
+  {
+   "id": "gw150914-17",
+   "track": "gw150914",
+   "name": "GW150914 inspiral",
+   "mass_kg": 1.2925e+32,
+   "size_m": 1787140.0,
+   "freq_hz": 17.5,
+   "source_url": "https://doi.org/10.1103/PhysRevLett.116.061102",
+   "citation": "Abbott B.P. et al. (2016) Observation of gravitational waves from a binary black hole merger. PRL 116, 061102",
+   "notes": "Gravitational-wave frequency 35 Hz; total mass 65 Msun"
+  },
+  {
+   "id": "gw150914-30",
+   "track": "gw150914",
+   "name": "GW150914 inspiral",
+   "mass_kg": 1.2925e+32,
+   "size_m": 1247680.0,
+   "freq_hz": 30.0,
+   "source_url": "https://doi.org/10.1103/PhysRevLett.116.061102",
+   "citation": "Abbott B.P. et al. (2016) Observation of gravitational waves from a binary black hole merger. PRL 116, 061102",
+   "notes": "Separation from Kepler's third law"
+  },
+  {
+   "id": "gw150914-50",
+   "track": "gw150914",
+   "name": "GW150914 inspiral",
+   "mass_kg": 1.2925e+32,
+   "size_m": 887580.0,
+   "freq_hz": 50.0,
+   "source_url": "https://doi.org/10.1103/PhysRevLett.116.061102",
+   "citation": "Abbott B.P. et al. (2016) Observation of gravitational waves from a binary black hole merger. PRL 116, 061102",
+   "notes": "Separation from Kepler's third law"
+  },
+  {
+   "id": "gw150914-75",
+   "track": "gw150914",
+   "name": "GW150914 inspiral",
+   "mass_kg": 1.2925e+32,
+   "size_m": 677350.0,
+   "freq_hz": 75.0,
+   "source_url": "https://doi.org/10.1103/PhysRevLett.116.061102",
+   "citation": "Abbott B.P. et al. (2016) Observation of gravitational waves from a binary black hole merger. PRL 116, 061102",
+   "notes": "Separation from Kepler's third law"
+  },
+  {
+   "id": "gw150914-100",
+   "track": "gw150914",
+   "name": "GW150914 inspiral",
+   "mass_kg": 1.2925e+32,
+   "size_m": 559140.0,
+   "freq_hz": 100.0,
+   "source_url": "https://doi.org/10.1103/PhysRevLett.116.061102",
+   "citation": "Abbott B.P. et al. (2016) Observation of gravitational waves from a binary black hole merger. PRL 116, 061102",
+   "notes": "Separation from Kepler's third law"
+  },
+  {
+   "id": "gw150914-125",
+   "track": "gw150914",
+   "name": "GW150914 final orbits",
+   "mass_kg": 1.2925e+32,
+   "size_m": 481850.0,
+   "freq_hz": 125.0,
+   "source_url": "https://doi.org/10.1103/PhysRevLett.116.061102",
+   "citation": "Abbott B.P. et al. (2016) Observation of gravitational waves from a binary black hole merger. PRL 116, 061102",
+   "notes": "Peak gravitational-wave frequency 250 Hz just before merger"
+  },
+  {
+   "id": "mw-5",
+   "track": "milky-way",
+   "name": "Milky Way rotation",
+   "mass_kg": 1.2122e+41,
+   "size_m": 3.0857e+20,
+   "freq_hz": 2.3623e-16,
+   "source_url": "https://doi.org/10.3847/1538-4357/aaf648",
+   "citation": "Eilers A.-C. et al. (2019) The circular velocity curve of the Milky Way from 5 to 25 kpc. ApJ 871, 120",
+   "notes": "Flat curve near 229 km/s; enclosed mass v^2 r / G at 5 kpc"
+  },
+  {
+   "id": "mw-sun",
+   "track": "milky-way",
+   "name": "Sun's galactic orbit",
+   "mass_kg": 1.9691e+41,
+   "size_m": 5.0124e+20,
+   "freq_hz": 1.4543e-16,
+   "source_url": "https://doi.org/10.3847/1538-4357/aaf648",
+   "citation": "Eilers A.-C. et al. (2019) The circular velocity curve of the Milky Way from 5 to 25 kpc. ApJ 871, 120",
+   "notes": "Sun at 8.122 kpc; one orbit in about 218 Myr"
+  },
+  {
+   "id": "mw-15",
+   "track": "milky-way",
+   "name": "Milky Way rotation",
+   "mass_kg": 3.6367e+41,
+   "size_m": 9.257e+20,
+   "freq_hz": 7.8743e-17,
+   "source_url": "https://doi.org/10.3847/1538-4357/aaf648",
+   "citation": "Eilers A.-C. et al. (2019) The circular velocity curve of the Milky Way from 5 to 25 kpc. ApJ 871, 120",
+   "notes": "15 kpc"
+  },
+  {
+   "id": "mw-25",
+   "track": "milky-way",
+   "name": "Milky Way rotation",
+   "mass_kg": 6.0611999999999994e+41,
+   "size_m": 1.5428e+21,
+   "freq_hz": 4.7246e-17,
+   "source_url": "https://doi.org/10.3847/1538-4357/aaf648",
+   "citation": "Eilers A.-C. et al. (2019) The circular velocity curve of the Milky Way from 5 to 25 kpc. ApJ 871, 120",
+   "notes": "25 kpc"
+  }
+ ]
+}

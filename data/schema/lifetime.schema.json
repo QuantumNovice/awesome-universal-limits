@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/lifetime.schema.json",
+  "title": "Lifetime vs size",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique id.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "description": "Label.",
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "description": "Object class.",
+      "type": "string",
+      "enum": [
+        "particle",
+        "molecular",
+        "living",
+        "human",
+        "astro",
+        "lab"
+      ]
+    },
+    "size_m": {
+      "description": "Size, m (Compton wavelength h/mc for point particles).",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "lifetime_low_s": {
+      "description": "Lowest known lifetime of the class.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "lifetime_high_s": {
+      "description": "Highest known lifetime of the class.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "lifetime_example_s": {
+      "description": "Lifetime of the marked example object.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "lifetime_max_s": {
+      "description": "Maximum allowable lifetime; empty if none.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "max_basis": {
+      "description": "Physics behind the maximum.",
+      "enum": [
+        "lower-bound",
+        "none",
+        null
+      ]
+    },
+    "source_url": {
+      "description": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "citation": {
+      "description": "Short citation: authors, year, title, venue.",
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "description": "One line shown in the hover tooltip.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "source_url",
+    "citation"
+  ],
+  "additionalProperties": false
+}

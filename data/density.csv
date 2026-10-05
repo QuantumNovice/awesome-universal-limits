@@ -1,0 +1,17 @@
+id,name,category,size_m,density_low_kg_m3,density_high_kg_m3,density_example_kg_m3,density_max_kg_m3,max_basis,source_url,citation,notes
+igm,Intergalactic gas (mean),astro,3e22,,,4.2e-28,,,https://doi.org/10.1051/0004-6361/201833910,"Planck Collaboration (2020) Planck 2018 results. VI. Cosmological parameters. A&A 641, A6",Mean cosmic baryon density
+milky-way,Milky Way (mean),astro,1.6107e22,,,1.4e-24,,,https://doi.org/10.3847/1538-4357/ab089f,"Watkins L.L. et al. (2019) Evidence for an intermediate-mass Milky Way from Gaia DR2 halo globular cluster motions. ApJ 873, 118",1.54e12 Msun spread over 261 kpc
+ism,Interstellar gas,astro,3.0857e16,7e-24,4.7e-15,2.3e-21,,,https://doi.org/10.1103/RevModPhys.73.1031,"Ferriere K.M. (2001) The interstellar environment of our galaxy. Rev Mod Phys 73, 1031",Hot ionised gas to dense molecular cores; 1 atom per cm3 marked
+air,Air at sea level,human,1,,,1.225,,,https://ntrs.nasa.gov/citations/19770009539,"NOAA/NASA/USAF (1976) U.S. Standard Atmosphere, 1976",15 C at sea level
+osmium,Osmium,human,0.01,,,22590,,,https://technology.matthey.com/article/33/1/14-16/,"Arblaster J.W. (1989) Densities of osmium and iridium. Platinum Metals Review 33, 14",Densest element at room conditions
+saturn,Saturn,astro,1.1646e8,,,687,,,https://nssdc.gsfc.nasa.gov/planetary/factsheet/,"Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",Less dense than water
+earth,Earth,astro,1.2742e7,,,5514,,,https://nssdc.gsfc.nasa.gov/planetary/factsheet/,"Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",Densest planet
+sun,Sun,astro,1.3914e9,2e-4,1.622e5,1408,,,https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html,"Williams D.R., NASA Sun Fact Sheet, NSSDCA (2024)",Photosphere to core; mean 1408 kg/m3
+sirius-b,White dwarf Sirius B,astro,1.127e7,,,2.7e9,,,https://doi.org/10.3847/1538-4357/aa6af8,"Bond H.E. et al. (2017) The Sirius system and its astrophysical puzzles. ApJ 840, 70",Mean density from 1.018 Msun in 0.0081 Rsun
+psr-j0740,Neutron star PSR J0740+6620,astro,2.478e4,,,5.19e17,,,https://doi.org/10.3847/2041-8213/ac0a81,"Riley T.E. et al. (2021) A NICER view of the massive pulsar PSR J0740+6620. ApJL 918, L27",Mean density about twice nuclear
+u238,Uranium-238 nucleus,particle,1.5123e-14,,,2.18e17,,,https://doi.org/10.1016/j.adt.2011.12.006,"Angeli I. & Marinova K.P. (2013) Table of experimental nuclear ground state charge radii: an update. ADNDT 99, 69",Nuclear matter density
+proton,Proton,particle,1.6815e-15,,,6.72e17,,,https://physics.nist.gov/cuu/Constants/,"Tiesinga E. et al., CODATA 2022 recommended values, NIST",Mass over the charge-radius sphere
+sgr-a,Sgr A* (inside horizon),astro,2.53803e10,,,9.98e5,,,https://doi.org/10.1051/0004-6361/202142465,"GRAVITY Collaboration (2022) Mass distribution in the Galactic Centre. A&A 657, L12",Mean density inside the horizon: on the black hole line
+m87,M87* (inside horizon),astro,3.8392e13,,,0.436,,,https://doi.org/10.3847/2041-8213/ab0ec7,"Event Horizon Telescope Collaboration (2019) First M87 Event Horizon Telescope Results. I. ApJL 875, L1",A giant black hole is less dense than air on average
+moon,Moon,astro,3.4748e6,,,3344,,,https://nssdc.gsfc.nasa.gov/planetary/factsheet/,"Williams D.R., NASA Planetary Fact Sheet, NSSDCA (2024)",
+aerogel,Carbon aerogel,lab,0.01,,,0.16,,,https://doi.org/10.1002/adma.201204576,"Sun H., Xu Z. & Gao C. (2013) Multifunctional, ultra-flyweight, synergistically assembled carbon aerogels. Advanced Materials 25, 2554",Lightest solid: lighter than air
