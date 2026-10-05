@@ -1,0 +1,9 @@
+id,name,category,volume_m3,mass_low_kg,mass_high_kg,mass_example_kg,mass_max_kg,max_basis,source_url,citation,notes
+breath,One breath of air,gas,5e-4,,,6.1e-4,,,https://www.ncbi.nlm.nih.gov/books/NBK482502/,"Hallett S., Toro F. & Ashurst J.V. Physiology, Tidal Volume. StatPearls (NCBI Bookshelf)",About 500 mL at rest
+superior,Lake Superior,water,1.2087e13,,,1.2087e16,,,https://www.epa.gov/greatlakes/great-lakes-facts-and-figures,"U.S. EPA, Great Lakes facts and figures",2900 cubic miles
+baikal,Lake Baikal,water,2.3615e13,,,2.3615e16,,,https://whc.unesco.org/en/list/754,"UNESCO World Heritage Centre, Lake Baikal",23615 km3: about a fifth of Earth's unfrozen fresh surface water
+antarctic-ice,Antarctic ice sheet,ice,2.692e16,,,2.47e19,,,https://doi.org/10.5194/tc-7-375-2013,"Fretwell P. et al. (2013) Bedmap2: improved ice bed, surface and thickness datasets for Antarctica. The Cryosphere 7, 375",26.92 million km3 of ice at 917 kg/m3
+ocean,All of Earth's oceans,water,1.3324e18,,,1.366e21,,,https://doi.org/10.5670/oceanog.2010.51,"Charette M.A. & Smith W.H.F. (2010) The volume of Earth's ocean. Oceanography 23, 112",1.3324 billion km3 of seawater
+all-water,All water on Earth,water,1.386e18,,,1.386e21,,,https://www.usgs.gov/special-topics/water-science-school/science/how-much-water-there-earth,"USGS Water Science School, How much water is there on Earth?",Would make a sphere 1385 km across
+atmosphere,Earth's atmosphere,gas,4.202e18,,,5.148e18,,,https://doi.org/10.1175/JCLI-3299.1,"Trenberth K.E. & Smith L. (2005) The mass of the atmosphere: a constraint on global analyses. J Climate 18, 864",Volume if all of it were at sea-level density
+molecular-cloud,Giant molecular cloud,gas,1.92e54,,,1.99e35,,,https://doi.org/10.1146/annurev-astro-082214-122324,"Heyer M. & Dame T.M. (2015) Molecular clouds in the Milky Way. ARA&A 53, 583",About 100000 Msun across about 50 pc

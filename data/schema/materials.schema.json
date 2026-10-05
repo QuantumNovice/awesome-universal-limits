@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/materials.schema.json",
+  "title": "Tensile strength vs density",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique id.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "description": "Label.",
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "description": "Material class.",
+      "type": "string",
+      "enum": [
+        "metal",
+        "polymer",
+        "fibre",
+        "ceramic",
+        "natural",
+        "nano"
+      ]
+    },
+    "density_kg_m3": {
+      "description": "Density, kg/m^3.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "strength_low_pa": {
+      "description": "Lowest known tensile strength of the class.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "strength_high_pa": {
+      "description": "Highest known tensile strength of the class.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "strength_example_pa": {
+      "description": "Tensile strength of the marked example object.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "strength_max_pa": {
+      "description": "Maximum allowable tensile strength; empty if none.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "max_basis": {
+      "description": "Physics behind the maximum.",
+      "enum": [
+        "ideal",
+        "none",
+        null
+      ]
+    },
+    "source_url": {
+      "description": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "citation": {
+      "description": "Short citation: authors, year, title, venue.",
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "description": "One line shown in the hover tooltip.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "source_url",
+    "citation"
+  ],
+  "additionalProperties": false
+}

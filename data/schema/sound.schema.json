@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/sound.schema.json",
+  "title": "Sound levels",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique id.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "description": "Label.",
+      "type": "string",
+      "minLength": 1
+    },
+    "panel": {
+      "description": "Which panel of the figure.",
+      "type": "string",
+      "enum": [
+        "air",
+        "water"
+      ]
+    },
+    "category": {
+      "description": "Kind.",
+      "type": "string",
+      "enum": [
+        "living",
+        "human",
+        "nature",
+        "limit"
+      ]
+    },
+    "value": {
+      "description": "Representative value.",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "low": {
+      "description": "Low end of the reported range; empty if none.",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "high": {
+      "description": "High end of the reported range; empty if none.",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "source_url": {
+      "description": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "citation": {
+      "description": "Short citation: authors, year, title, venue.",
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "description": "One line shown in the hover tooltip.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "panel",
+    "category",
+    "source_url",
+    "citation"
+  ],
+  "additionalProperties": false
+}

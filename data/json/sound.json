@@ -1,0 +1,103 @@
+{
+ "dataset": "sound",
+ "title": "Sound levels",
+ "license": "CC-BY-4.0",
+ "columns": {
+  "id": "Unique id.",
+  "name": "Label.",
+  "panel": "Which panel of the figure.",
+  "category": "Kind.",
+  "value": "Representative value.",
+  "low": "Low end of the reported range; empty if none.",
+  "high": "High end of the reported range; empty if none.",
+  "source_url": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+  "citation": "Short citation: authors, year, title, venue.",
+  "notes": "One line shown in the hover tooltip."
+ },
+ "rows": [
+  {
+   "id": "threshold",
+   "name": "Threshold of hearing (1 kHz)",
+   "panel": "air",
+   "category": "living",
+   "value": 0,
+   "low": null,
+   "high": null,
+   "source_url": "https://www.iso.org/standard/83117.html",
+   "citation": "ISO 226:2023 Acoustics: normal equal-loudness-level contours",
+   "notes": "0 dB SPL is 20 micropascals"
+  },
+  {
+   "id": "niosh-rel",
+   "name": "Safe all day (8 h exposure limit)",
+   "panel": "air",
+   "category": "limit",
+   "value": 85,
+   "low": null,
+   "high": null,
+   "source_url": "https://www.cdc.gov/niosh/docs/98-126/",
+   "citation": "NIOSH (1998) Criteria for a recommended standard: occupational noise exposure. DHHS (NIOSH) Publication 98-126",
+   "notes": "85 dBA averaged over 8 hours"
+  },
+  {
+   "id": "niosh-peak",
+   "name": "Impulse ceiling (never exceed)",
+   "panel": "air",
+   "category": "limit",
+   "value": 140,
+   "low": null,
+   "high": null,
+   "source_url": "https://www.cdc.gov/niosh/docs/98-126/",
+   "citation": "NIOSH (1998) Criteria for a recommended standard: occupational noise exposure. DHHS (NIOSH) Publication 98-126",
+   "notes": "140 dB peak"
+  },
+  {
+   "id": "firearm",
+   "name": "Gunshot at the shooter's ear",
+   "panel": "air",
+   "category": "human",
+   "value": 160,
+   "low": 140.0,
+   "high": 175.0,
+   "source_url": "https://doi.org/10.1055/s-0037-1606323",
+   "citation": "Meinke D.K. et al. (2017) Prevention of noise-induced hearing loss from recreational firearms. Seminars in Hearing 38, 267",
+   "notes": "Peak levels"
+  },
+  {
+   "id": "blue-whale",
+   "name": "Blue whale call",
+   "panel": "water",
+   "category": "living",
+   "value": 188,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1121/1.1912752",
+   "citation": "Cummings W.C. & Thompson P.O. (1971) Underwater sounds from the blue whale, Balaenoptera musculus. J Acoust Soc Am 50, 1193",
+   "notes": "Source level re 1 micropascal at 1 m"
+  },
+  {
+   "id": "shrimp",
+   "name": "Snapping shrimp claw",
+   "panel": "water",
+   "category": "living",
+   "value": 218,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1126/science.289.5487.2114",
+   "citation": "Versluis M. et al. (2000) How snapping shrimp snap: through cavitating bubbles. Science 289, 2114",
+   "notes": "The snap is a collapsing cavitation bubble"
+  },
+  {
+   "id": "sperm-whale",
+   "name": "Sperm whale click",
+   "panel": "water",
+   "category": "living",
+   "value": 236,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1121/1.1586258",
+   "citation": "Mohl B. et al. (2003) The monopulsed nature of sperm whale clicks. J Acoust Soc Am 114, 1143",
+   "notes": "Loudest sound made by any animal"
+  }
+ ]
+}
