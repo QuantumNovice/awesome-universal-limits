@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Allowed Universe</title>
+    <script>
+      // GitHub Pages serves this for any unknown path. The app routes by hash, so turn
+      // /<repo>/chart/spin into /<repo>/#/chart/spin (or just go home for unknown paths).
+      (function () {
+        var parts = location.pathname.split("/").filter(Boolean);
+        var repo = parts.shift() || "";
+        var rest = parts.join("/").replace(/\/?index\.html$/, "");
+        location.replace("/" + (repo ? repo + "/" : "") + (rest ? "#/" + rest : "") + location.hash);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="/">The Allowed Universe</a>…</p>
+  </body>
+</html>

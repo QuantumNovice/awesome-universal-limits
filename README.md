@@ -95,7 +95,7 @@ make site      # npm ci + production build into site/dist
 make dev       # local dev server
 ```
 
-GitHub Pages deploys it from [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
+GitHub Pages deploys it from [`.github/workflows/pages.yml`](.github/workflows/pages.yml) on every push to `main`, after lint and tests pass, to <https://quantumnovice.github.io/awesome-universal-limits/>. One-time setup in a fork: **Settings → Pages → Source: GitHub Actions**. Hash routes are shareable (`#/chart/spin`), and `site/public/404.html` redirects path-style links such as `/chart/spin` to them.
 
 ## Quick start
 
