@@ -1,0 +1,9 @@
+id,benchmark,level,score_pct,name,source_url,citation,notes
+imagenet-chance,imagenet,chance,0.5,Chance (5 of 1000 guesses),https://doi.org/10.1007/s11263-015-0816-y,"Russakovsky O. et al. (2015) ImageNet Large Scale Visual Recognition Challenge. IJCV 115, 211",1000 classes
+imagenet-human,imagenet,human,94.9,Trained human annotator,https://doi.org/10.1007/s11263-015-0816-y,"Russakovsky O. et al. (2015) ImageNet Large Scale Visual Recognition Challenge. IJCV 115, 211",5.1 percent top-5 error
+mmlu-chance,mmlu,chance,25,Chance (4 options),https://arxiv.org/abs/2009.03300,"Hendrycks D. et al. (2021) Measuring massive multitask language understanding. arXiv:2009.03300",
+mmlu-human,mmlu,human,89.8,Estimated expert accuracy,https://arxiv.org/abs/2009.03300,"Hendrycks D. et al. (2021) Measuring massive multitask language understanding. arXiv:2009.03300",Authors' estimate from per-subject expert performance
+mmlu-ceiling,mmlu,ceiling,93.5,Label-error ceiling,https://arxiv.org/abs/2406.04127,"Gema A.P. et al. (2025) Are we done with MMLU? NAACL; arXiv:2406.04127",About 6.5 percent of questions contain errors
+gpqa-chance,gpqa,chance,25,Chance (4 options),https://arxiv.org/abs/2311.12022,"Rein D. et al. (2023) GPQA: a graduate-level Google-proof Q&A benchmark. arXiv:2311.12022",
+gpqa-human,gpqa,human,65,PhD domain experts,https://arxiv.org/abs/2311.12022,"Rein D. et al. (2023) GPQA: a graduate-level Google-proof Q&A benchmark. arXiv:2311.12022",Non-experts with web access reach 34 percent
+arc-human,arcagi,human,64.2,Average human (H-ARC),https://arxiv.org/abs/2409.01374,"LeGris S. et al. (2024) H-ARC: a robust estimate of human performance on the Abstraction and Reasoning Corpus benchmark. arXiv:2409.01374",Evaluation set; 98.8 percent of tasks solved by at least one person

@@ -1,0 +1,97 @@
+{
+ "dataset": "ai_benchmark_refs",
+ "title": "Benchmark reference levels",
+ "license": "CC-BY-4.0",
+ "columns": {
+  "id": "Unique id.",
+  "benchmark": "Benchmark.",
+  "level": "Kind of reference level.",
+  "score_pct": "Level, percent.",
+  "name": "Label.",
+  "source_url": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+  "citation": "Short citation: authors, year, title, venue.",
+  "notes": "One line shown in the hover tooltip."
+ },
+ "rows": [
+  {
+   "id": "imagenet-chance",
+   "benchmark": "imagenet",
+   "level": "chance",
+   "score_pct": 0.5,
+   "name": "Chance (5 of 1000 guesses)",
+   "source_url": "https://doi.org/10.1007/s11263-015-0816-y",
+   "citation": "Russakovsky O. et al. (2015) ImageNet Large Scale Visual Recognition Challenge. IJCV 115, 211",
+   "notes": "1000 classes"
+  },
+  {
+   "id": "imagenet-human",
+   "benchmark": "imagenet",
+   "level": "human",
+   "score_pct": 94.9,
+   "name": "Trained human annotator",
+   "source_url": "https://doi.org/10.1007/s11263-015-0816-y",
+   "citation": "Russakovsky O. et al. (2015) ImageNet Large Scale Visual Recognition Challenge. IJCV 115, 211",
+   "notes": "5.1 percent top-5 error"
+  },
+  {
+   "id": "mmlu-chance",
+   "benchmark": "mmlu",
+   "level": "chance",
+   "score_pct": 25.0,
+   "name": "Chance (4 options)",
+   "source_url": "https://arxiv.org/abs/2009.03300",
+   "citation": "Hendrycks D. et al. (2021) Measuring massive multitask language understanding. arXiv:2009.03300",
+   "notes": null
+  },
+  {
+   "id": "mmlu-human",
+   "benchmark": "mmlu",
+   "level": "human",
+   "score_pct": 89.8,
+   "name": "Estimated expert accuracy",
+   "source_url": "https://arxiv.org/abs/2009.03300",
+   "citation": "Hendrycks D. et al. (2021) Measuring massive multitask language understanding. arXiv:2009.03300",
+   "notes": "Authors' estimate from per-subject expert performance"
+  },
+  {
+   "id": "mmlu-ceiling",
+   "benchmark": "mmlu",
+   "level": "ceiling",
+   "score_pct": 93.5,
+   "name": "Label-error ceiling",
+   "source_url": "https://arxiv.org/abs/2406.04127",
+   "citation": "Gema A.P. et al. (2025) Are we done with MMLU? NAACL; arXiv:2406.04127",
+   "notes": "About 6.5 percent of questions contain errors"
+  },
+  {
+   "id": "gpqa-chance",
+   "benchmark": "gpqa",
+   "level": "chance",
+   "score_pct": 25.0,
+   "name": "Chance (4 options)",
+   "source_url": "https://arxiv.org/abs/2311.12022",
+   "citation": "Rein D. et al. (2023) GPQA: a graduate-level Google-proof Q&A benchmark. arXiv:2311.12022",
+   "notes": null
+  },
+  {
+   "id": "gpqa-human",
+   "benchmark": "gpqa",
+   "level": "human",
+   "score_pct": 65.0,
+   "name": "PhD domain experts",
+   "source_url": "https://arxiv.org/abs/2311.12022",
+   "citation": "Rein D. et al. (2023) GPQA: a graduate-level Google-proof Q&A benchmark. arXiv:2311.12022",
+   "notes": "Non-experts with web access reach 34 percent"
+  },
+  {
+   "id": "arc-human",
+   "benchmark": "arcagi",
+   "level": "human",
+   "score_pct": 64.2,
+   "name": "Average human (H-ARC)",
+   "source_url": "https://arxiv.org/abs/2409.01374",
+   "citation": "LeGris S. et al. (2024) H-ARC: a robust estimate of human performance on the Abstraction and Reasoning Corpus benchmark. arXiv:2409.01374",
+   "notes": "Evaluation set; 98.8 percent of tasks solved by at least one person"
+  }
+ ]
+}
