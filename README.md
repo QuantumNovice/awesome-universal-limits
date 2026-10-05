@@ -2,7 +2,9 @@
 
 **Everything from molecules to galaxies, plotted between the hard limits of physics.**
 
-![How fast can things spin?](figures/spin.png)
+Open-data log-log charts of real objects, set against the hard limits physics allows: the speed of light, the black hole bound, the quantum limit and material strength. The charts cover spin, speed, mass, density, pressure, temperature, energy, power, electric and magnetic fields, black holes, pulsars, materials, sound, life, buildings, AI models and more. Every value cites a primary source. **[Explore the interactive charts →](https://quantumnovice.github.io/awesome-universal-limits/)**
+
+![Log-log chart of spin rate against size, from molecules to galaxies, bounded by the speed of light and breakup limits](figures/spin.png)
 
 [![CI](https://github.com/QuantumNovice/awesome-universal-limits/actions/workflows/ci.yml/badge.svg)](https://github.com/QuantumNovice/awesome-universal-limits/actions/workflows/ci.yml)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)

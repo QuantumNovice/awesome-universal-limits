@@ -6,6 +6,14 @@ readme = "README.md"
 license = "MIT"
 authors = [{ name = "QuantumNovice" }]
 requires-python = ">=3.10"
+keywords = ["physics", "physical-limits", "log-log", "scale-comparison", "data-visualization", "astrophysics", "open-data", "science-communication"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
 dependencies = [
     "numpy>=1.26",
     "scipy>=1.15",  # CODATA 2022 constants
@@ -13,6 +21,11 @@ dependencies = [
     "pandas>=2.1",
     "jsonschema>=4.20",
 ]
+
+[project.urls]
+Homepage = "https://quantumnovice.github.io/awesome-universal-limits/"
+Repository = "https://github.com/QuantumNovice/awesome-universal-limits"
+Issues = "https://github.com/QuantumNovice/awesome-universal-limits/issues"
 
 [dependency-groups]
 dev = ["pytest>=8", "ruff>=0.5"]
