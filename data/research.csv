@@ -1,0 +1,8 @@
+id,name,panel,category,value,source_url,citation,notes
+read,Articles a scientist reads,papers,person,280,https://doi.org/10.1108/00012530910932267,"Tenopir C. et al. (2009) Electronic journals and changes in scholarly article seeking and reading patterns. Aslib Proceedings 61, 5",Average for US university faculty (2005 survey)
+hyperprolific,Hyperprolific author threshold,papers,record,72,https://doi.org/10.1038/d41586-018-06185-8,"Ioannidis J.P.A., Klavans R. & Boyack K.W. (2018) Thousands of scientists publish a paper every five days. Nature 561, 167",One paper every five days
+arxiv,arXiv new submissions (2024),papers,world,244031,https://arxiv.org/stats/monthly_submissions,"arXiv, monthly submission statistics (sum of 2024)",
+world,Science & engineering articles (2022),papers,world,3.3e6,https://ncses.nsf.gov/pubs/nsb202333,"National Science Board (2023) Publications Output: U.S. Trends and International Comparisons. NSB-2023-33",Scopus-indexed articles worldwide
+dunbar,Stable social relationships,team,social,150,https://doi.org/10.1016/0047-2484(92)90081-J,"Dunbar R.I.M. (1992) Neocortex size as a constraint on group size in primates. J Hum Evol 22, 469",Dunbar's number
+atlas-cms,ATLAS + CMS Higgs mass paper,team,record,5154,https://doi.org/10.1103/PhysRevLett.114.191803,"ATLAS and CMS Collaborations (2015) Combined measurement of the Higgs boson mass in pp collisions at 7 and 8 TeV. PRL 114, 191803",5154 authors
+covidsurg,COVIDSurg vaccination paper,team,record,15025,https://doi.org/10.1093/bjs/znab101,"COVIDSurg & GlobalSurg Collaboratives (2021) SARS-CoV-2 vaccination modelling for safe surgery to save lives. Br J Surg 108, 1056",Most authors on one paper

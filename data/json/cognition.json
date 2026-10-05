@@ -1,0 +1,163 @@
+{
+ "dataset": "cognition",
+ "title": "Human cognitive limits",
+ "license": "CC-BY-4.0",
+ "columns": {
+  "id": "Unique id.",
+  "name": "Label.",
+  "panel": "rate = bits per second; capacity = count of items.",
+  "category": "Kind.",
+  "value": "Representative value.",
+  "low": "Low end of the reported range; empty if none.",
+  "high": "High end of the reported range; empty if none.",
+  "source_url": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+  "citation": "Short citation: authors, year, title, venue.",
+  "notes": "One line shown in the hover tooltip."
+ },
+ "rows": [
+  {
+   "id": "behaviour",
+   "name": "Conscious behaviour (typing, gaming, memorising)",
+   "panel": "rate",
+   "category": "behaviour",
+   "value": 10.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1016/j.neuron.2024.11.008",
+   "citation": "Zheng J. & Meister M. (2025) The unbearable slowness of being: why do we live at 10 bits/s? Neuron 113, 192",
+   "notes": "Every measured task lands near 10 bits/s"
+  },
+  {
+   "id": "speech",
+   "name": "Spoken language",
+   "panel": "rate",
+   "category": "language",
+   "value": 39.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1126/sciadv.aaw2594",
+   "citation": "Coupe C. et al. (2019) Different languages, similar encoding efficiency: comparable information rates across the human communicative niche. Science Advances 5, eaaw2594",
+   "notes": "About 39 bits/s across 17 languages"
+  },
+  {
+   "id": "retina",
+   "name": "Retina to brain (optic nerve)",
+   "panel": "rate",
+   "category": "sensory",
+   "value": 10000000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1016/j.cub.2006.05.056",
+   "citation": "Koch K. et al. (2006) How much the eye tells the brain. Current Biology 16, 1428",
+   "notes": "Order of 10 million bits/s for the human retina"
+  },
+  {
+   "id": "senses",
+   "name": "All sensory input",
+   "panel": "rate",
+   "category": "sensory",
+   "value": 1000000000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1016/j.neuron.2024.11.008",
+   "citation": "Zheng J. & Meister M. (2025) The unbearable slowness of being: why do we live at 10 bits/s? Neuron 113, 192",
+   "notes": "About 1e9 bits/s arrive at the periphery"
+  },
+  {
+   "id": "working-memory",
+   "name": "Working memory (Cowan)",
+   "panel": "capacity",
+   "category": "memory",
+   "value": 4.0,
+   "low": 3.0,
+   "high": 5.0,
+   "source_url": "https://doi.org/10.1017/S0140525X01003922",
+   "citation": "Cowan N. (2001) The magical number 4 in short-term memory. Behavioral and Brain Sciences 24, 87",
+   "notes": "Chunks held at once"
+  },
+  {
+   "id": "miller",
+   "name": "Immediate span (Miller)",
+   "panel": "capacity",
+   "category": "memory",
+   "value": 7.0,
+   "low": 5.0,
+   "high": 9.0,
+   "source_url": "https://doi.org/10.1037/h0043158",
+   "citation": "Miller G.A. (1956) The magical number seven, plus or minus two. Psychological Review 63, 81",
+   "notes": "Seven plus or minus two items"
+  },
+  {
+   "id": "dunbar",
+   "name": "Stable social relationships",
+   "panel": "capacity",
+   "category": "social",
+   "value": 150.0,
+   "low": 100.0,
+   "high": 230.0,
+   "source_url": "https://doi.org/10.1016/0047-2484(92)90081-J",
+   "citation": "Dunbar R.I.M. (1992) Neocortex size as a constraint on group size in primates. J Hum Evol 22, 469",
+   "notes": "Dunbar's number"
+  },
+  {
+   "id": "faces",
+   "name": "Faces known",
+   "panel": "capacity",
+   "category": "social",
+   "value": 5000.0,
+   "low": 1000.0,
+   "high": 10000.0,
+   "source_url": "https://doi.org/10.1098/rspb.2018.1319",
+   "citation": "Jenkins R., Dowsett A.J. & Burton A.M. (2018) How many faces do people know? Proc R Soc B 285, 20181319",
+   "notes": "Mean about 5000"
+  },
+  {
+   "id": "pictures",
+   "name": "Pictures recognised after one viewing",
+   "panel": "capacity",
+   "category": "memory",
+   "value": 10000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1080/14640747308400340",
+   "citation": "Standing L. (1973) Learning 10,000 pictures. Q J Exp Psychol 25, 207",
+   "notes": "83 percent recognition after a single exposure"
+  },
+  {
+   "id": "vocabulary",
+   "name": "Vocabulary (lemmas)",
+   "panel": "capacity",
+   "category": "language",
+   "value": 42000.0,
+   "low": 27000.0,
+   "high": 52000.0,
+   "source_url": "https://doi.org/10.3389/fpsyg.2016.01116",
+   "citation": "Brysbaert M. et al. (2016) How many words do we know? Frontiers in Psychology 7, 1116",
+   "notes": "20-year-old native English speaker"
+  },
+  {
+   "id": "neurons",
+   "name": "Neurons in the brain",
+   "panel": "capacity",
+   "category": "physics",
+   "value": 86000000000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1002/cne.21974",
+   "citation": "Azevedo F.A.C. et al. (2009) Equal numbers of neuronal and nonneuronal cells make the human brain an isometrically scaled-up primate brain. J Comp Neurol 513, 532",
+   "notes": "86 billion"
+  },
+  {
+   "id": "synapses",
+   "name": "Synapses in the neocortex",
+   "panel": "capacity",
+   "category": "physics",
+   "value": 150000000000000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1016/S0531-5565(02)00151-1",
+   "citation": "Pakkenberg B. et al. (2003) Aging and the human neocortex. Exp Gerontol 38, 95",
+   "notes": "0.15e15 synapses"
+  }
+ ]
+}

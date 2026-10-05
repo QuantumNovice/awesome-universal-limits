@@ -1,0 +1,87 @@
+{
+ "dataset": "research",
+ "title": "Researcher limits",
+ "license": "CC-BY-4.0",
+ "columns": {
+  "id": "Unique id.",
+  "name": "Label.",
+  "panel": "papers = papers per year; team = people.",
+  "category": "Kind.",
+  "value": "Value.",
+  "source_url": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+  "citation": "Short citation: authors, year, title, venue.",
+  "notes": "One line shown in the hover tooltip."
+ },
+ "rows": [
+  {
+   "id": "read",
+   "name": "Articles a scientist reads",
+   "panel": "papers",
+   "category": "person",
+   "value": 280.0,
+   "source_url": "https://doi.org/10.1108/00012530910932267",
+   "citation": "Tenopir C. et al. (2009) Electronic journals and changes in scholarly article seeking and reading patterns. Aslib Proceedings 61, 5",
+   "notes": "Average for US university faculty (2005 survey)"
+  },
+  {
+   "id": "hyperprolific",
+   "name": "Hyperprolific author threshold",
+   "panel": "papers",
+   "category": "record",
+   "value": 72.0,
+   "source_url": "https://doi.org/10.1038/d41586-018-06185-8",
+   "citation": "Ioannidis J.P.A., Klavans R. & Boyack K.W. (2018) Thousands of scientists publish a paper every five days. Nature 561, 167",
+   "notes": "One paper every five days"
+  },
+  {
+   "id": "arxiv",
+   "name": "arXiv new submissions (2024)",
+   "panel": "papers",
+   "category": "world",
+   "value": 244031.0,
+   "source_url": "https://arxiv.org/stats/monthly_submissions",
+   "citation": "arXiv, monthly submission statistics (sum of 2024)",
+   "notes": null
+  },
+  {
+   "id": "world",
+   "name": "Science & engineering articles (2022)",
+   "panel": "papers",
+   "category": "world",
+   "value": 3300000.0,
+   "source_url": "https://ncses.nsf.gov/pubs/nsb202333",
+   "citation": "National Science Board (2023) Publications Output: U.S. Trends and International Comparisons. NSB-2023-33",
+   "notes": "Scopus-indexed articles worldwide"
+  },
+  {
+   "id": "dunbar",
+   "name": "Stable social relationships",
+   "panel": "team",
+   "category": "social",
+   "value": 150.0,
+   "source_url": "https://doi.org/10.1016/0047-2484(92)90081-J",
+   "citation": "Dunbar R.I.M. (1992) Neocortex size as a constraint on group size in primates. J Hum Evol 22, 469",
+   "notes": "Dunbar's number"
+  },
+  {
+   "id": "atlas-cms",
+   "name": "ATLAS + CMS Higgs mass paper",
+   "panel": "team",
+   "category": "record",
+   "value": 5154.0,
+   "source_url": "https://doi.org/10.1103/PhysRevLett.114.191803",
+   "citation": "ATLAS and CMS Collaborations (2015) Combined measurement of the Higgs boson mass in pp collisions at 7 and 8 TeV. PRL 114, 191803",
+   "notes": "5154 authors"
+  },
+  {
+   "id": "covidsurg",
+   "name": "COVIDSurg vaccination paper",
+   "panel": "team",
+   "category": "record",
+   "value": 15025.0,
+   "source_url": "https://doi.org/10.1093/bjs/znab101",
+   "citation": "COVIDSurg & GlobalSurg Collaboratives (2021) SARS-CoV-2 vaccination modelling for safe surgery to save lives. Br J Surg 108, 1056",
+   "notes": "Most authors on one paper"
+  }
+ ]
+}

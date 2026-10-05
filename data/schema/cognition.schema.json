@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/cognition.schema.json",
+  "title": "Human cognitive limits",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique id.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "description": "Label.",
+      "type": "string",
+      "minLength": 1
+    },
+    "panel": {
+      "description": "rate = bits per second; capacity = count of items.",
+      "type": "string",
+      "enum": [
+        "rate",
+        "capacity"
+      ]
+    },
+    "category": {
+      "description": "Kind.",
+      "type": "string",
+      "enum": [
+        "behaviour",
+        "sensory",
+        "physics",
+        "memory",
+        "social",
+        "language"
+      ]
+    },
+    "value": {
+      "description": "Representative value.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "low": {
+      "description": "Low end of the reported range; empty if none.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "high": {
+      "description": "High end of the reported range; empty if none.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "source_url": {
+      "description": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "citation": {
+      "description": "Short citation: authors, year, title, venue.",
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "description": "One line shown in the hover tooltip.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "panel",
+    "category",
+    "source_url",
+    "citation"
+  ],
+  "additionalProperties": false
+}
