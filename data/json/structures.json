@@ -1,0 +1,91 @@
+{
+ "dataset": "structures",
+ "title": "Structure mass vs height",
+ "license": "CC-BY-4.0",
+ "columns": {
+  "id": "Unique id.",
+  "name": "Label.",
+  "category": "Object class.",
+  "height_m": "Height, m.",
+  "mass_low_kg": "Lowest known mass of the class.",
+  "mass_high_kg": "Highest known mass of the class.",
+  "mass_example_kg": "Mass of the marked example object.",
+  "mass_max_kg": "Maximum allowable mass; empty if none.",
+  "max_basis": "Physics behind the maximum.",
+  "source_url": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+  "citation": "Short citation: authors, year, title, venue.",
+  "notes": "One line shown in the hover tooltip."
+ },
+ "rows": [
+  {
+   "id": "eiffel",
+   "name": "Eiffel Tower",
+   "category": "tower",
+   "height_m": 330.0,
+   "mass_low_kg": null,
+   "mass_high_kg": null,
+   "mass_example_kg": 10100000.0,
+   "mass_max_kg": null,
+   "max_basis": null,
+   "source_url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+   "citation": "Societe d'Exploitation de la Tour Eiffel, Key figures",
+   "notes": "About 10100 t in total"
+  },
+  {
+   "id": "empire-state",
+   "name": "Empire State Building",
+   "category": "skyscraper",
+   "height_m": 381.0,
+   "mass_low_kg": null,
+   "mass_high_kg": null,
+   "mass_example_kg": 331000000.0,
+   "mass_max_kg": null,
+   "max_basis": null,
+   "source_url": "https://esbnyc.com/sites/default/files/esb_fact_sheet_final.pdf",
+   "citation": "Empire State Realty Trust, Empire State Building fact sheet",
+   "notes": "365000 short tons"
+  },
+  {
+   "id": "burj-khalifa",
+   "name": "Burj Khalifa",
+   "category": "skyscraper",
+   "height_m": 828.0,
+   "mass_low_kg": null,
+   "mass_high_kg": null,
+   "mass_example_kg": 830000000.0,
+   "mass_max_kg": null,
+   "max_basis": null,
+   "source_url": "https://tatasteeleurope.com/construction/case-studies/burj-khalifa",
+   "citation": "Tata Steel, Burj Khalifa case study (330000 m3 of concrete and 39000 t of steel rebar)",
+   "notes": "Concrete plus rebar only: a lower bound"
+  },
+  {
+   "id": "hoover-dam",
+   "name": "Hoover Dam",
+   "category": "dam",
+   "height_m": 221.4,
+   "mass_low_kg": null,
+   "mass_high_kg": null,
+   "mass_example_kg": 5990000000.0,
+   "mass_max_kg": null,
+   "max_basis": null,
+   "source_url": "https://www.usbr.gov/lc/hooverdam/faqs/damfaqs.html",
+   "citation": "U.S. Bureau of Reclamation, Hoover Dam FAQs",
+   "notes": "More than 6.6 million short tons"
+  },
+  {
+   "id": "great-pyramid",
+   "name": "Great Pyramid of Giza",
+   "category": "ancient",
+   "height_m": 146.6,
+   "mass_low_kg": null,
+   "mass_high_kg": null,
+   "mass_example_kg": 5750000000.0,
+   "mass_max_kg": null,
+   "max_basis": null,
+   "source_url": "https://www.britannica.com/topic/Pyramids-of-Giza",
+   "citation": "Encyclopaedia Britannica, Pyramids of Giza",
+   "notes": "About 2.3 million blocks of about 2.5 t each; original height"
+  }
+ ]
+}

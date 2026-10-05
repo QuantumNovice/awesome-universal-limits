@@ -1,0 +1,13 @@
+id,name,category,year,height_m,source_url,citation,notes
+washington,Washington Monument,tower,1884,169.3,https://www.nps.gov/wamo/index.htm,"U.S. National Park Service, Washington Monument",Tallest structure in the world 1884-1889
+eiffel,Eiffel Tower,tower,1889,300,https://www.toureiffel.paris/en/the-monument/key-figures,"Societe d'Exploitation de la Tour Eiffel, Key figures",300 m in 1889; 330 m today with antennas
+woolworth,Woolworth Building,skyscraper,1913,241.4,https://www.skyscrapercenter.com/buildings,"CTBUH, The Skyscraper Center database",
+chrysler,Chrysler Building,skyscraper,1930,318.9,https://www.skyscrapercenter.com/buildings,"CTBUH, The Skyscraper Center database",
+empire-state,Empire State Building,skyscraper,1931,381,https://esbnyc.com/sites/default/files/esb_fact_sheet_final.pdf,"Empire State Realty Trust, Empire State Building fact sheet",1250 ft to the roof
+willis,Willis (Sears) Tower,skyscraper,1974,442.1,https://www.skyscrapercenter.com/buildings,"CTBUH, The Skyscraper Center database",
+petronas,Petronas Towers,skyscraper,1998,451.9,https://www.skyscrapercenter.com/buildings,"CTBUH, The Skyscraper Center database",
+taipei-101,Taipei 101,skyscraper,2004,508,https://www.skyscrapercenter.com/buildings,"CTBUH, The Skyscraper Center database",
+burj-khalifa,Burj Khalifa,skyscraper,2010,828,https://www.skyscrapercenter.com/buildings,"CTBUH, The Skyscraper Center database",Tallest building since 2010
+skytree,Tokyo Skytree,tower,2012,634,https://www.tokyo-skytree.jp/en/,"Tokyo Skytree, official site",Tallest tower (not a building)
+shanghai,Shanghai Tower,skyscraper,2015,632,https://www.skyscrapercenter.com/buildings,"CTBUH, The Skyscraper Center database",
+merdeka,Merdeka 118,skyscraper,2023,678.9,https://www.skyscrapercenter.com/buildings,"CTBUH, The Skyscraper Center database",Second-tallest building

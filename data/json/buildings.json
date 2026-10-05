@@ -1,0 +1,137 @@
+{
+ "dataset": "buildings",
+ "title": "Tallest buildings over time",
+ "license": "CC-BY-4.0",
+ "columns": {
+  "id": "Unique id.",
+  "name": "Label.",
+  "category": "Kind.",
+  "year": "Year completed (negative = BCE).",
+  "height_m": "Architectural height, m.",
+  "source_url": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+  "citation": "Short citation: authors, year, title, venue.",
+  "notes": "One line shown in the hover tooltip."
+ },
+ "rows": [
+  {
+   "id": "washington",
+   "name": "Washington Monument",
+   "category": "tower",
+   "year": 1884,
+   "height_m": 169.3,
+   "source_url": "https://www.nps.gov/wamo/index.htm",
+   "citation": "U.S. National Park Service, Washington Monument",
+   "notes": "Tallest structure in the world 1884-1889"
+  },
+  {
+   "id": "eiffel",
+   "name": "Eiffel Tower",
+   "category": "tower",
+   "year": 1889,
+   "height_m": 300.0,
+   "source_url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+   "citation": "Societe d'Exploitation de la Tour Eiffel, Key figures",
+   "notes": "300 m in 1889; 330 m today with antennas"
+  },
+  {
+   "id": "woolworth",
+   "name": "Woolworth Building",
+   "category": "skyscraper",
+   "year": 1913,
+   "height_m": 241.4,
+   "source_url": "https://www.skyscrapercenter.com/buildings",
+   "citation": "CTBUH, The Skyscraper Center database",
+   "notes": null
+  },
+  {
+   "id": "chrysler",
+   "name": "Chrysler Building",
+   "category": "skyscraper",
+   "year": 1930,
+   "height_m": 318.9,
+   "source_url": "https://www.skyscrapercenter.com/buildings",
+   "citation": "CTBUH, The Skyscraper Center database",
+   "notes": null
+  },
+  {
+   "id": "empire-state",
+   "name": "Empire State Building",
+   "category": "skyscraper",
+   "year": 1931,
+   "height_m": 381.0,
+   "source_url": "https://esbnyc.com/sites/default/files/esb_fact_sheet_final.pdf",
+   "citation": "Empire State Realty Trust, Empire State Building fact sheet",
+   "notes": "1250 ft to the roof"
+  },
+  {
+   "id": "willis",
+   "name": "Willis (Sears) Tower",
+   "category": "skyscraper",
+   "year": 1974,
+   "height_m": 442.1,
+   "source_url": "https://www.skyscrapercenter.com/buildings",
+   "citation": "CTBUH, The Skyscraper Center database",
+   "notes": null
+  },
+  {
+   "id": "petronas",
+   "name": "Petronas Towers",
+   "category": "skyscraper",
+   "year": 1998,
+   "height_m": 451.9,
+   "source_url": "https://www.skyscrapercenter.com/buildings",
+   "citation": "CTBUH, The Skyscraper Center database",
+   "notes": null
+  },
+  {
+   "id": "taipei-101",
+   "name": "Taipei 101",
+   "category": "skyscraper",
+   "year": 2004,
+   "height_m": 508.0,
+   "source_url": "https://www.skyscrapercenter.com/buildings",
+   "citation": "CTBUH, The Skyscraper Center database",
+   "notes": null
+  },
+  {
+   "id": "burj-khalifa",
+   "name": "Burj Khalifa",
+   "category": "skyscraper",
+   "year": 2010,
+   "height_m": 828.0,
+   "source_url": "https://www.skyscrapercenter.com/buildings",
+   "citation": "CTBUH, The Skyscraper Center database",
+   "notes": "Tallest building since 2010"
+  },
+  {
+   "id": "skytree",
+   "name": "Tokyo Skytree",
+   "category": "tower",
+   "year": 2012,
+   "height_m": 634.0,
+   "source_url": "https://www.tokyo-skytree.jp/en/",
+   "citation": "Tokyo Skytree, official site",
+   "notes": "Tallest tower (not a building)"
+  },
+  {
+   "id": "shanghai",
+   "name": "Shanghai Tower",
+   "category": "skyscraper",
+   "year": 2015,
+   "height_m": 632.0,
+   "source_url": "https://www.skyscrapercenter.com/buildings",
+   "citation": "CTBUH, The Skyscraper Center database",
+   "notes": null
+  },
+  {
+   "id": "merdeka",
+   "name": "Merdeka 118",
+   "category": "skyscraper",
+   "year": 2023,
+   "height_m": 678.9,
+   "source_url": "https://www.skyscrapercenter.com/buildings",
+   "citation": "CTBUH, The Skyscraper Center database",
+   "notes": "Second-tallest building"
+  }
+ ]
+}
