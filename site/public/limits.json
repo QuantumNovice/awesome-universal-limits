@@ -31858,7 +31858,7 @@
      "id": "planck",
      "label": "Planck charge \u221a(4\u03c0\u03b5\u2080\u0127c) \u2248 11.7 e",
      "kind": "reference",
-     "dashed": true,
+     "dashed": false,
      "formula": "sqrt(4 pi eps0 hbar c)",
      "forbidden": null,
      "source_url": "",

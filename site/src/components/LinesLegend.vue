@@ -1,16 +1,24 @@
 <script setup lang="ts">
+import { t } from "../i18n";
 import { lineSwatch } from "../lib/plots";
 import type { LimitLine } from "../lib/types";
 
-defineProps<{ lines: Pick<LimitLine, "kind" | "dashed" | "label" | "formula" | "source_url" | "citation">[] }>();
+// english: the labels come from the (English) chart data rather than from the translations.
+withDefaults(
+  defineProps<{
+    lines: Pick<LimitLine, "kind" | "dashed" | "label" | "formula" | "source_url" | "citation">[];
+    english?: boolean;
+  }>(),
+  { english: true },
+);
 
-const KIND: Record<string, string> = {
-  upper: "Hard bound (upper)",
-  lower: "Hard bound (lower)",
-  material: "Practical limit",
-  gravity: "Practical limit",
-  reference: "Reference",
-};
+const KIND = {
+  upper: "kindUpper",
+  lower: "kindLower",
+  material: "kindPractical",
+  gravity: "kindPractical",
+  reference: "kindReference",
+} as const;
 </script>
 
 <template>
@@ -18,12 +26,12 @@ const KIND: Record<string, string> = {
     <li v-for="l in lines" :key="l.label">
       <span class="swatch" v-html="lineSwatch(l)"></span>
       <span class="text">
-        <span class="label">{{ l.label }}</span>
+        <span class="label" :lang="english ? 'en' : undefined" :dir="english ? 'ltr' : undefined">{{ l.label }}</span>
         <span class="meta">
-          {{ KIND[l.kind] }}<template v-if="l.dashed"> · observability floor</template>
-          <template v-if="l.formula"> · <code>{{ l.formula }}</code></template>
+          {{ t(KIND[l.kind]) }}<template v-if="l.dashed && (l.kind === 'upper' || l.kind === 'lower')"> · {{ t("observabilityFloor") }}</template>
+          <template v-if="l.formula"> · <code dir="ltr">{{ l.formula }}</code></template>
           <template v-if="l.source_url">
-            · <a :href="l.source_url" target="_blank" rel="noopener">{{ l.citation || "source" }}</a>
+            · <a :href="l.source_url" target="_blank" rel="noopener" lang="en" dir="ltr">{{ l.citation || t("source") }}</a>
           </template>
         </span>
       </span>

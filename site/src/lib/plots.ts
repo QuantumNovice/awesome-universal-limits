@@ -1,9 +1,11 @@
 import * as Plot from "@observablehq/plot";
+import { t } from "../i18n";
 import { formatValue, logTicks, powerOfTen } from "./format";
 import type {
   BarPanel,
   BarRow,
   BarsChartData,
+  BenchmarkScore,
   BenchmarksChartData,
   LimitLine,
   LineKind,
@@ -21,6 +23,7 @@ export const LINE_STYLE: Record<LineKind, { stroke: string; width: number; dash?
 
 export function lineDash(l: { kind: LineKind; dashed?: boolean }): string | undefined {
   if ((l.kind === "upper" || l.kind === "lower") && l.dashed) return "8,5";
+  if (l.kind === "material" && l.dashed) return "7,4";
   return LINE_STYLE[l.kind].dash;
 }
 
@@ -282,13 +285,14 @@ export function xyPlot(d: XYChartData, opts: PlotOptions): Element {
       strokeWidth: 1,
       r: narrow ? 5 : 6.5,
       channels: {
-        Object: "name",
+        [t("tipObject")]: "name",
         [d.xlabel]: (o: XYObject) => formatValue(o.x),
-        Value: (o: XYObject) => formatValue(markY(o)),
-        Range: (o: XYObject) => (o.lo !== null && o.hi !== null ? `${formatValue(o.lo)} to ${formatValue(o.hi)}` : ""),
-        Maximum: (o: XYObject) => (o.mx !== null ? formatValue(o.mx) : ""),
-        Notes: (o: XYObject) => o.notes ?? "",
-        Source: "citation",
+        [t("tipValue")]: (o: XYObject) => formatValue(markY(o)),
+        [t("tipRange")]: (o: XYObject) =>
+          o.lo !== null && o.hi !== null ? t("rangeTo", { lo: formatValue(o.lo), hi: formatValue(o.hi) }) : "",
+        [t("tipMaximum")]: (o: XYObject) => (o.mx !== null ? formatValue(o.mx) : ""),
+        [t("tipNotes")]: (o: XYObject) => o.notes ?? "",
+        [t("tipSource")]: "citation",
       },
       tip: { format: { x: false, y: false, fill: false, symbol: false, stroke: false }, lineWidth: 40 },
     }),
@@ -360,11 +364,12 @@ export function barsPlot(d: BarsChartData, panel: BarPanel, opts: PlotOptions): 
       stroke: "var(--bg)",
       r: 6.5,
       channels: {
-        Item: "name",
-        Value: (r) => formatValue(r.value, unit),
-        Range: (r) => (r.low !== null && r.high !== null ? `${formatValue(r.low, unit)} to ${formatValue(r.high, unit)}` : ""),
-        Notes: (r) => r.notes ?? "",
-        Source: "citation",
+        [t("tipItem")]: "name",
+        [t("tipValue")]: (r: BarRow) => formatValue(r.value, unit),
+        [t("tipRange")]: (r: BarRow) =>
+          r.low !== null && r.high !== null ? t("rangeTo", { lo: formatValue(r.low, unit), hi: formatValue(r.high, unit) }) : "",
+        [t("tipNotes")]: (r: BarRow) => r.notes ?? "",
+        [t("tipSource")]: "citation",
       },
       tip: { format: { x: false, y: false, fill: false, symbol: false, stroke: false }, lineWidth: 40 },
     }),
@@ -436,7 +441,13 @@ export function benchmarkPlot(d: BenchmarksChartData, key: string, opts: PlotOpt
       symbol: "diamond",
       r: 5,
       stroke: "var(--bg)",
-      channels: { Model: "model", Score: (s) => `${s.score_pct}%`, Setting: "setting", Notes: (s) => s.notes ?? "", Source: "citation" },
+      channels: {
+        [t("tipModel")]: "model",
+        [t("tipScore")]: (s: BenchmarkScore) => `${s.score_pct}%`,
+        [t("tipSetting")]: "setting",
+        [t("tipNotes")]: (s: BenchmarkScore) => s.notes ?? "",
+        [t("tipSource")]: "citation",
+      },
       tip: { format: { x: false, y: false, fill: false, symbol: false, stroke: false }, lineWidth: 40 },
     }),
   );
@@ -456,7 +467,7 @@ export function benchmarkPlot(d: BenchmarksChartData, key: string, opts: PlotOpt
     marginBottom: margin.bottom,
     style: { background: "transparent", fontFamily: "var(--font-sans)", fontSize: "11px", overflow: "visible" },
     x: { domain: d.xlim, label: null, tickFormat: "d", ticks: 4, grid: true },
-    y: { domain: [0, 108], label: "Score, %", grid: true, ticks: [0, 25, 50, 75, 100] },
+    y: { domain: [0, 108], label: t("scoreAxis"), grid: true, ticks: [0, 25, 50, 75, 100] },
     marks,
   });
 }

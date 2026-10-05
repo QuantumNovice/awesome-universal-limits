@@ -3,7 +3,9 @@ import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
 import ChartView from "./components/ChartView.vue";
 import HomeView from "./components/HomeView.vue";
 import NavMenu from "./components/NavMenu.vue";
+import LanguageSwitch from "./components/LanguageSwitch.vue";
 import SourcesView from "./components/SourcesView.vue";
+import { pageTitle, t } from "./i18n";
 import { loadIndex } from "./lib/data";
 import type { SiteIndex } from "./lib/types";
 
@@ -33,9 +35,13 @@ onMounted(async () => {
 onBeforeUnmount(() => window.removeEventListener("hashchange", onHash));
 
 const chartName = computed(() => (route.value.startsWith("chart/") ? route.value.slice(6) : ""));
-watch(route, (r) => {
-  if (r === "") document.title = "The Allowed Universe";
-});
+watch(
+  [route, () => t("siteName")],
+  ([r]) => {
+    if (r === "") document.title = pageTitle();
+  },
+  { immediate: true },
+);
 </script>
 
 <template>
@@ -48,20 +54,21 @@ watch(route, (r) => {
           <path d="M5 27 Q 14 19 27 25" stroke="#2a78d6" stroke-width="3" fill="none" />
           <circle cx="15" cy="17" r="3" fill="#6250d6" />
         </svg>
-        <span>The Allowed Universe</span>
+        <span>{{ t("siteName") }}</span>
       </a>
+      <LanguageSwitch class="lang-switch" />
       <NavMenu v-if="index" :index="index" :current="route" @go="go" />
     </aside>
     <main class="main">
-      <p v-if="error" class="error">Could not load the chart index ({{ error }}). Run <code>make figures</code> first.</p>
+      <p v-if="error" class="error">{{ t("loadIndexError", { error, cmd: "make figures" }) }}</p>
       <template v-else-if="index">
         <ChartView v-if="chartName && index.charts[chartName]" :name="chartName" />
         <SourcesView v-else-if="route === 'sources'" :index="index" />
         <HomeView v-else :index="index" />
       </template>
-      <p v-else class="loading">Loading…</p>
+      <p v-else class="loading">{{ t("loading") }}</p>
       <footer class="foot">
-        Code MIT · data and figures CC BY 4.0 ·
+        {{ t("license") }} ·
         <a href="https://github.com/QuantumNovice/awesome-universal-limits" target="_blank" rel="noopener">GitHub</a>
       </footer>
     </main>

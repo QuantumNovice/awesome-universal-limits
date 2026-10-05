@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { chartTitle, groupName, t } from "../i18n";
 import { asset } from "../lib/data";
 import type { SiteIndex } from "../lib/types";
 
@@ -8,21 +9,21 @@ defineProps<{ index: SiteIndex }>();
 <template>
   <section class="home">
     <header class="hero">
-      <h1>The Allowed Universe</h1>
-      <p class="lede">Everything from molecules to galaxies, plotted between the hard limits of physics.</p>
+      <h1>{{ t("siteName") }}</h1>
+      <p class="lede">{{ t("tagline") }}</p>
       <div class="keys">
-        <span><i class="k red"></i><strong>Shaded and solid:</strong> forbidden by physics (faster than light, below one quantum, inside a black hole)</span>
-        <span><i class="k amber"></i><strong>Dotted and dashed:</strong> practical limits where a kind of object fails</span>
-        <span><i class="k violet"></i><strong>Markers:</strong> real objects, each with a source; bars show the known range</span>
+        <span><i class="k red"></i><span><strong>{{ t("keyForbiddenStrong") }}</strong> {{ t("keyForbidden") }}</span></span>
+        <span><i class="k amber"></i><span><strong>{{ t("keyPracticalStrong") }}</strong> {{ t("keyPractical") }}</span></span>
+        <span><i class="k violet"></i><span><strong>{{ t("keyMarkersStrong") }}</strong> {{ t("keyMarkers") }}</span></span>
       </div>
     </header>
 
     <section v-for="g in index.groups" :key="g.name" class="group">
-      <h2>{{ g.name }}</h2>
+      <h2>{{ groupName(g.name) }}</h2>
       <div class="grid">
         <a v-for="c in g.charts" :key="c" class="tile" :href="`#/chart/${c}`">
-          <img :src="asset(`figures/${c}.png`)" :alt="index.charts[c].title" loading="lazy" />
-          <span>{{ index.charts[c].title }}</span>
+          <img :src="asset(`figures/${c}.png`)" :alt="chartTitle(c, index.charts[c].title)" loading="lazy" />
+          <span>{{ chartTitle(c, index.charts[c].title) }}</span>
         </a>
       </div>
     </section>

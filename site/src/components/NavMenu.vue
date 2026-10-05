@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { chartTitle, groupName, t } from "../i18n";
 import type { SiteIndex } from "../lib/types";
 
 defineProps<{ index: SiteIndex; current: string }>();
@@ -10,32 +11,32 @@ function onSelect(e: Event) {
 </script>
 
 <template>
-  <nav class="nav" aria-label="Charts">
+  <nav class="nav" :aria-label="t('charts')">
     <label class="nav-select">
-      <span class="sr-only">Choose a chart</span>
+      <span class="sr-only">{{ t("chooseChart") }}</span>
       <select :value="current" @change="onSelect">
-        <option value="">Overview</option>
-        <optgroup v-for="g in index.groups" :key="g.name" :label="g.name">
-          <option v-for="c in g.charts" :key="c" :value="`chart/${c}`">{{ index.charts[c].title }}</option>
+        <option value="">{{ t("overview") }}</option>
+        <optgroup v-for="g in index.groups" :key="g.name" :label="groupName(g.name)">
+          <option v-for="c in g.charts" :key="c" :value="`chart/${c}`">{{ chartTitle(c, index.charts[c].title) }}</option>
         </optgroup>
-        <option value="sources">All sources</option>
+        <option value="sources">{{ t("allSources") }}</option>
       </select>
     </label>
     <div class="nav-list">
-      <a href="#/" :class="{ active: current === '' }">Overview</a>
+      <a href="#/" :class="{ active: current === '' }">{{ t("overview") }}</a>
       <section v-for="g in index.groups" :key="g.name">
-        <h3>{{ g.name }}</h3>
+        <h3>{{ groupName(g.name) }}</h3>
         <a
           v-for="c in g.charts"
           :key="c"
           :href="`#/chart/${c}`"
           :class="{ active: current === `chart/${c}` }"
-          >{{ index.charts[c].title }}</a
+          >{{ chartTitle(c, index.charts[c].title) }}</a
         >
       </section>
       <section>
-        <h3>Reference</h3>
-        <a href="#/sources" :class="{ active: current === 'sources' }">All sources</a>
+        <h3>{{ t("reference") }}</h3>
+        <a href="#/sources" :class="{ active: current === 'sources' }">{{ t("allSources") }}</a>
       </section>
     </div>
   </nav>

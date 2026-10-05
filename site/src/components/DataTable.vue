@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
+import { t } from "../i18n";
 import { formatValue } from "../lib/format";
 import type { ChartData } from "../lib/types";
 import { asset } from "../lib/data";
@@ -25,8 +26,8 @@ const rows = computed<Row[]>(() => {
       key: o.id,
       name: o.name,
       category: c.categories[o.category]?.label ?? o.category,
-      value: `${formatValue(markY(o))} at ${formatValue(o.x)}`,
-      range: o.lo !== null && o.hi !== null ? `${formatValue(o.lo)} to ${formatValue(o.hi)}` : "",
+      value: t("valueAt", { v: formatValue(markY(o)), x: formatValue(o.x) }),
+      range: o.lo !== null && o.hi !== null ? t("rangeTo", { lo: formatValue(o.lo), hi: formatValue(o.hi) }) : "",
       notes: o.notes ?? "",
       url: o.source_url,
       citation: o.citation,
@@ -39,7 +40,8 @@ const rows = computed<Row[]>(() => {
         name: r.name,
         category: c.categories[r.category]?.label ?? r.category,
         value: formatValue(r.value, c.unit),
-        range: r.low !== null && r.high !== null ? `${formatValue(r.low, c.unit)} to ${formatValue(r.high, c.unit)}` : "",
+        range:
+          r.low !== null && r.high !== null ? t("rangeTo", { lo: formatValue(r.low, c.unit), hi: formatValue(r.high, c.unit) }) : "",
         notes: r.notes ?? "",
         url: r.source_url,
         citation: r.citation,
@@ -61,7 +63,7 @@ const rows = computed<Row[]>(() => {
 
 <template>
   <div class="downloads">
-    Download:
+    {{ t("download") }}
     <template v-for="ds in chart.datasets" :key="ds">
       <a :href="asset(`data/json/${ds}.json`)" download>{{ ds }}.json</a>
       <a :href="`https://github.com/QuantumNovice/awesome-universal-limits/blob/main/data/${ds}.csv`" target="_blank" rel="noopener"
@@ -73,23 +75,23 @@ const rows = computed<Row[]>(() => {
     <table>
       <thead>
         <tr>
-          <th>Object</th>
-          <th>Class</th>
-          <th>Value</th>
-          <th>Range or setting</th>
-          <th>Source</th>
+          <th>{{ t("colObject") }}</th>
+          <th>{{ t("colClass") }}</th>
+          <th>{{ t("colValue") }}</th>
+          <th>{{ t("colRange") }}</th>
+          <th>{{ t("colSource") }}</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="r in rows" :key="r.key">
-          <td>
+          <td lang="en" dir="ltr">
             <strong>{{ r.name }}</strong>
             <div v-if="r.notes" class="notes">{{ r.notes }}</div>
           </td>
-          <td>{{ r.category }}</td>
-          <td class="num">{{ r.value }}</td>
-          <td class="num">{{ r.range }}</td>
-          <td class="src">
+          <td lang="en" dir="ltr">{{ r.category }}</td>
+          <td class="num"><bdi>{{ r.value }}</bdi></td>
+          <td class="num"><bdi>{{ r.range }}</bdi></td>
+          <td class="src" lang="en" dir="ltr">
             <a :href="r.url" target="_blank" rel="noopener">{{ r.citation }}</a>
           </td>
         </tr>
@@ -120,7 +122,7 @@ table {
 }
 th,
 td {
-  text-align: left;
+  text-align: start;
   vertical-align: top;
   padding: 8px 10px;
   border-bottom: 1px solid var(--border);

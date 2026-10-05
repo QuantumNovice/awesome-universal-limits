@@ -48,7 +48,6 @@ def lines() -> list[Line]:
             "Planck charge √(4πε₀ħc) ≈ 11.7 e",
             "reference",
             y=L.PLANCK_CHARGE,
-            dashed=True,
             formula="sqrt(4 pi eps0 hbar c)",
         ),
         Line(

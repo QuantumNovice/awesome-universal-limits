@@ -1,5 +1,7 @@
 :root {
   --plot-background: var(--surface);
+  /* Named faces before system-ui: system-ui resolves to an Urdu face on an Urdu page. */
+  --font-latin: "Inter", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --bg: #f7f7f5;
   --surface: #fcfcfb;
@@ -85,7 +87,7 @@ code {
   height: 100vh;
   overflow-y: auto;
   padding: 18px 12px 30px;
-  border-right: 1px solid var(--border);
+  border-inline-end: 1px solid var(--border);
   background: var(--surface);
 }
 .brand {
@@ -97,6 +99,9 @@ code {
   color: var(--text);
   text-decoration: none;
   padding: 0 8px 6px;
+}
+.lang-switch {
+  margin: 4px 8px 8px;
 }
 .main {
   padding: 26px clamp(16px, 3.5vw, 44px) 40px;
@@ -139,7 +144,7 @@ body {
     position: sticky;
     z-index: 5;
     height: auto;
-    border-right: none;
+    border-inline-end: none;
     border-bottom: 1px solid var(--border);
     padding: 10px 16px;
     display: flex;
@@ -168,3 +173,43 @@ svg[class^="plot-"] {
   stroke: var(--border);
 }
 </style>
+
+/* Languages. Charts, formulas and the (English) explainers stay left-to-right in every language. */
+:root:lang(ko) {
+  --font-sans: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", ui-sans-serif, system-ui, sans-serif;
+}
+:root:lang(ko) body {
+  word-break: keep-all;
+}
+:root:lang(ur) {
+  --font-sans: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Urdu Typesetting", "Noto Naskh Arabic", ui-sans-serif, system-ui, sans-serif;
+}
+:root:lang(ur) body {
+  line-height: 2;
+}
+/* English chart content inside an Urdu page: Latin font, normal line height. Bare digits in
+   values and ranges are kept out of the Nastaliq face too. */
+:root:lang(ur) [lang="en"],
+:root:lang(ur) bdi {
+  font-family: var(--font-latin);
+  line-height: 1.55;
+}
+/* Arabic script must not be letter-spaced or upper-cased: it breaks the joins between letters. */
+:root:lang(ur) h3,
+:root:lang(ur) .eyebrow {
+  letter-spacing: 0;
+  text-transform: none;
+}
+.plot-card,
+.figure-card,
+.plot-host {
+  direction: ltr;
+}
+/* Observable Plot sets font-family: system-ui on its SVG; pin it to the Latin stack. */
+:root:lang(ur) .plot-host svg,
+:root:lang(ur) .plot-host figure {
+  font-family: var(--font-latin) !important;
+}
+:root[dir="rtl"] .plot-card .hint {
+  direction: rtl;
+}

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from "vue";
+import { chartTitle, groupName, locale, pageTitle, t } from "../i18n";
 import { asset, loadChart } from "../lib/data";
 import { renderMarkdown } from "../lib/markdown";
 import { barsPlot, benchmarkPlot, xyPlot } from "../lib/plots";
@@ -24,13 +25,19 @@ watch(
     hidden.value = new Set();
     try {
       chart.value = await loadChart(name);
-      document.title = `${chart.value.title} · The Allowed Universe`;
     } catch (e) {
       error.value = String(e);
     }
   },
   { immediate: true },
 );
+
+const title = computed(() => (chart.value ? chartTitle(chart.value.name, chart.value.title) : ""));
+watch(title, (s) => {
+  if (s) document.title = pageTitle(s);
+});
+
+const TABS = { interactive: "tabInteractive", figure: "tabFigure", data: "tabData", about: "tabAbout" } as const;
 
 const categories = computed(() => {
   const c = chart.value;
@@ -70,10 +77,10 @@ const legendLines = computed(() => {
       p.lines.map((l) => ({ ...l, dashed: false, formula: "", source_url: "", citation: "" })),
     );
   return [
-    { kind: "upper" as const, dashed: false, label: "Perfect score (hard ceiling)", formula: "100%", source_url: "", citation: "" },
-    { kind: "material" as const, dashed: false, label: "Label-error ceiling (MMLU)", formula: "", source_url: "", citation: "" },
-    { kind: "gravity" as const, dashed: false, label: "Human baseline", formula: "", source_url: "", citation: "" },
-    { kind: "lower" as const, dashed: true, label: "Random guessing", formula: "", source_url: "", citation: "" },
+    { kind: "upper" as const, dashed: false, label: t("benchPerfect"), formula: "100%", source_url: "", citation: "" },
+    { kind: "material" as const, dashed: false, label: t("benchLabelError"), formula: "", source_url: "", citation: "" },
+    { kind: "gravity" as const, dashed: false, label: t("benchHuman"), formula: "", source_url: "", citation: "" },
+    { kind: "lower" as const, dashed: true, label: t("benchChance"), formula: "", source_url: "", citation: "" },
   ];
 });
 
@@ -83,23 +90,24 @@ const opts = (width: number) => ({ width, hidden: hidden.value, labels: labels.v
 
 <template>
   <article class="chart-view">
-    <p v-if="error" class="error">Could not load this chart: {{ error }}</p>
+    <p v-if="error" class="error">{{ t("loadChartError", { error }) }}</p>
     <template v-else-if="chart">
       <header class="chart-head">
-        <p class="eyebrow">{{ chart.group }}</p>
-        <h1>{{ chart.title }}</h1>
+        <p class="eyebrow">{{ groupName(chart.group) }}</p>
+        <h1>{{ title }}</h1>
+        <p v-if="t('englishNote')" class="lang-note">{{ t("englishNote") }}</p>
       </header>
 
       <div class="tabs" role="tablist">
         <button
-          v-for="t in ['interactive', 'figure', 'data', 'about'] as const"
-          :key="t"
+          v-for="tb in ['interactive', 'figure', 'data', 'about'] as const"
+          :key="tb"
           role="tab"
-          :aria-selected="tab === t"
-          :class="{ on: tab === t }"
-          @click="tab = t"
+          :aria-selected="tab === tb"
+          :class="{ on: tab === tb }"
+          @click="tab = tb"
         >
-          {{ { interactive: "Interactive", figure: "Print figure", data: "Data & sources", about: "Explainer" }[t] }}
+          {{ t(TABS[tb]) }}
         </button>
       </div>
 
@@ -113,56 +121,56 @@ const opts = (width: number) => ({ width, hidden: hidden.value, labels: labels.v
             :aria-pressed="!c.keys.every((k) => hidden.has(k))"
             @click="toggle(c.keys)"
           >
-            <span class="dot" :style="{ background: c.color }"></span>{{ c.label }}
+            <span class="dot" :style="{ background: c.color }"></span><span lang="en" dir="ltr">{{ c.label }}</span>
           </button>
-          <label class="check"><input v-model="labels" type="checkbox" /> Labels</label>
+          <label class="check"><input v-model="labels" type="checkbox" /> {{ t("labels") }}</label>
         </div>
 
-        <div class="card plot-card">
-          <PlotHost v-if="chart.kind === 'xy'" :build="(w: number) => xyPlot(chart as any, opts(w))" :deps="[hidden, labels]" />
+        <div class="card plot-card" lang="en">
+          <PlotHost v-if="chart.kind === 'xy'" :build="(w: number) => xyPlot(chart as any, opts(w))" :deps="[hidden, labels, locale]" />
           <template v-else-if="chart.kind === 'bars'">
             <div v-for="p in chart.panels" :key="p.key" class="bar-panel">
-              <h3 v-if="p.title">{{ p.title }}</h3>
-              <PlotHost :build="(w: number) => barsPlot(chart as any, p, opts(w))" :deps="[hidden, labels]" />
+              <h3 v-if="p.title" lang="en" dir="ltr">{{ p.title }}</h3>
+              <PlotHost :build="(w: number) => barsPlot(chart as any, p, opts(w))" :deps="[hidden, labels, locale]" />
             </div>
           </template>
           <div v-else class="bench-grid">
             <div v-for="p in chart.panels" :key="p.key" class="bench">
-              <h3>{{ p.title }}</h3>
-              <PlotHost :build="(w: number) => benchmarkPlot(chart as any, p.key, opts(w))" :deps="[labels]" />
+              <h3 lang="en" dir="ltr">{{ p.title }}</h3>
+              <PlotHost :build="(w: number) => benchmarkPlot(chart as any, p.key, opts(w))" :deps="[labels, locale]" />
             </div>
           </div>
-          <p class="hint">Hover or tap a marker for its value, notes and source.</p>
+          <p class="hint" :lang="locale">{{ t("hint") }}</p>
         </div>
-        <p v-if="chart.footnote" class="footnote">{{ chart.footnote }}</p>
+        <p v-if="chart.footnote" class="footnote" lang="en" dir="ltr">{{ chart.footnote }}</p>
 
-        <h2 class="sub">Limit lines</h2>
-        <LinesLegend :lines="legendLines" />
+        <h2 class="sub">{{ t("limitLines") }}</h2>
+        <LinesLegend :lines="legendLines" :english="chart.kind !== 'benchmarks'" />
       </section>
 
       <section v-else-if="tab === 'figure'" class="panel">
         <div class="card figure-card">
-          <img :src="asset(chart.png)" :alt="chart.title" loading="lazy" />
+          <img :src="asset(chart.png)" :alt="title" loading="lazy" />
         </div>
         <p class="downloads">
-          <a :href="asset(chart.png)" download>Download PNG (200 dpi)</a>
-          <a :href="asset(chart.pdf)" download>Download PDF (vector)</a>
+          <a :href="asset(chart.png)" download>{{ t("downloadPng") }}</a>
+          <a :href="asset(chart.pdf)" download>{{ t("downloadPdf") }}</a>
         </p>
       </section>
 
       <section v-else-if="tab === 'data'" class="panel">
         <DataTable :chart="chart" />
-        <h2 class="sub">All sources for this chart</h2>
+        <h2 class="sub">{{ t("chartSources") }}</h2>
         <ol class="sources">
-          <li v-for="s in chart.sources" :key="s.url">
+          <li v-for="s in chart.sources" :key="s.url" lang="en" dir="ltr">
             {{ s.citation }}. <a :href="s.url" target="_blank" rel="noopener">{{ s.url }}</a>
           </li>
         </ol>
       </section>
 
-      <section v-else class="panel prose" v-html="explainerHtml"></section>
+      <section v-else class="panel prose" lang="en" dir="ltr" v-html="explainerHtml"></section>
     </template>
-    <p v-else class="loading">Loading…</p>
+    <p v-else class="loading">{{ t("loading") }}</p>
   </article>
 </template>
 
@@ -174,6 +182,11 @@ const opts = (width: number) => ({ width, hidden: hidden.value, labels: labels.v
   margin: 2px 0 14px;
   font-size: clamp(22px, 3.2vw, 32px);
   line-height: 1.15;
+}
+.lang-note {
+  margin: -6px 0 14px;
+  font-size: 13px;
+  color: var(--text-3);
 }
 .eyebrow {
   margin: 0;
@@ -236,7 +249,7 @@ const opts = (width: number) => ({ width, hidden: hidden.value, labels: labels.v
 }
 .check {
   font-size: 13px;
-  margin-left: auto;
+  margin-inline-start: auto;
   display: inline-flex;
   gap: 6px;
   align-items: center;
@@ -289,7 +302,7 @@ const opts = (width: number) => ({ width, hidden: hidden.value, labels: labels.v
 }
 .sources {
   font-size: 13px;
-  padding-left: 22px;
+  padding-inline-start: 22px;
   line-height: 1.5;
 }
 .sources a {

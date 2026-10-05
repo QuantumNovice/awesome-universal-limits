@@ -86,6 +86,7 @@ Every figure is also available as a vector PDF in [`figures/`](figures/).
 - Toggle categories on and off.
 - Read each chart's explainer.
 - Download the data or the print figures.
+- Switch the interface between English, Korean (한국어) and Urdu (اردو, right-to-left). Links can carry the language, e.g. `?lang=ko`. Strings and translated chart titles live in [`site/src/i18n/messages.ts`](site/src/i18n/messages.ts); chart content (axes, lines, objects, explainers) stays in English.
 
 It reads only the JSON that `make figures` exports to `site/public/`, so the limit lines on the website are the same sampled formulas as in the PNGs. It works on phones down to 375 px.
 
