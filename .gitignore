@@ -12,3 +12,16 @@ site/node_modules/
 site/dist/
 site/public/data/
 site/public/figures/
+
+# AI agent / assistant files
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+.cursor/
+.cursorrules
+.aider*
+.codex/
+.gemini/
+.github/copilot-instructions.md
+task.md
