@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/pulsars.schema.json",
+  "title": "Pulsars and magnetars: period vs spin-down rate",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique id.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "description": "Label.",
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "description": "Class.",
+      "type": "string",
+      "enum": [
+        "pulsar",
+        "millisecond",
+        "magnetar",
+        "long-period"
+      ]
+    },
+    "period_s": {
+      "description": "Spin period, s.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "pdot": {
+      "description": "Period derivative dP/dt, s/s.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "source_url": {
+      "description": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "citation": {
+      "description": "Short citation: authors, year, title, venue.",
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "description": "One line shown in the hover tooltip.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "source_url",
+    "citation"
+  ],
+  "additionalProperties": false
+}

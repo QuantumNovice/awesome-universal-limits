@@ -1,0 +1,127 @@
+{
+ "dataset": "pulsars",
+ "title": "Pulsars and magnetars: period vs spin-down rate",
+ "license": "CC-BY-4.0",
+ "columns": {
+  "id": "Unique id.",
+  "name": "Label.",
+  "category": "Class.",
+  "period_s": "Spin period, s.",
+  "pdot": "Period derivative dP/dt, s/s.",
+  "source_url": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+  "citation": "Short citation: authors, year, title, venue.",
+  "notes": "One line shown in the hover tooltip."
+ },
+ "rows": [
+  {
+   "id": "j1748",
+   "name": "PSR J1748-2446ad",
+   "category": "millisecond",
+   "period_s": 0.001396,
+   "pdot": 1e-20,
+   "source_url": "https://doi.org/10.1126/science.1123430",
+   "citation": "Hessels J.W.T. et al. (2006) A radio pulsar spinning at 716 Hz. Science 311, 1901",
+   "notes": "Fastest known pulsar; Pdot is an upper limit (shown at 1e-20)"
+  },
+  {
+   "id": "j0437",
+   "name": "PSR J0437-4715",
+   "category": "millisecond",
+   "period_s": 0.005757,
+   "pdot": 5.73e-20,
+   "source_url": "https://doi.org/10.1086/428488",
+   "citation": "Manchester R.N. et al. (2005) The Australia Telescope National Facility pulsar catalogue. AJ 129, 1993",
+   "notes": "Nearest millisecond pulsar; recycled by a companion"
+  },
+  {
+   "id": "crab",
+   "name": "Crab pulsar",
+   "category": "pulsar",
+   "period_s": 0.0334,
+   "pdot": 4.2e-13,
+   "source_url": "https://doi.org/10.1086/428488",
+   "citation": "Manchester R.N. et al. (2005) The Australia Telescope National Facility pulsar catalogue. AJ 129, 1993",
+   "notes": "Born in the supernova of 1054"
+  },
+  {
+   "id": "vela",
+   "name": "Vela pulsar",
+   "category": "pulsar",
+   "period_s": 0.0893,
+   "pdot": 1.25e-13,
+   "source_url": "https://doi.org/10.1086/428488",
+   "citation": "Manchester R.N. et al. (2005) The Australia Telescope National Facility pulsar catalogue. AJ 129, 1993",
+   "notes": "About 11000 years old"
+  },
+  {
+   "id": "b1919",
+   "name": "PSR B1919+21",
+   "category": "pulsar",
+   "period_s": 1.337,
+   "pdot": 1.35e-15,
+   "source_url": "https://doi.org/10.1086/428488",
+   "citation": "Manchester R.N. et al. (2005) The Australia Telescope National Facility pulsar catalogue. AJ 129, 1993",
+   "notes": "The first pulsar discovered (1967)"
+  },
+  {
+   "id": "swift-j1818",
+   "name": "Swift J1818.0-1607",
+   "category": "magnetar",
+   "period_s": 1.36,
+   "pdot": 8.2e-11,
+   "source_url": "https://doi.org/10.3847/2041-8213/ab9742",
+   "citation": "Esposito P. et al. (2020) A very young radio-loud magnetar. ApJL 896, L30",
+   "notes": "Fastest-spinning magnetar; about 500 years old"
+  },
+  {
+   "id": "xte-j1810",
+   "name": "XTE J1810-197",
+   "category": "magnetar",
+   "period_s": 5.54,
+   "pdot": 7.7e-12,
+   "source_url": "https://doi.org/10.1088/0067-0049/212/1/6",
+   "citation": "Olausen S.A. & Kaspi V.M. (2014) The McGill magnetar catalog. ApJS 212, 6",
+   "notes": "First radio-emitting magnetar"
+  },
+  {
+   "id": "sgr-1806",
+   "name": "SGR 1806-20",
+   "category": "magnetar",
+   "period_s": 7.55,
+   "pdot": 7.5e-10,
+   "source_url": "https://doi.org/10.1088/0067-0049/212/1/6",
+   "citation": "Olausen S.A. & Kaspi V.M. (2014) The McGill magnetar catalog. ApJS 212, 6",
+   "notes": "Strongest known field; 2004 giant flare"
+  },
+  {
+   "id": "sgr-0418",
+   "name": "SGR 0418+5729",
+   "category": "magnetar",
+   "period_s": 9.08,
+   "pdot": 4e-15,
+   "source_url": "https://doi.org/10.1126/science.1196088",
+   "citation": "Rea N. et al. (2010) A low-magnetic-field soft gamma repeater. Science 330, 944",
+   "notes": "A magnetar with an ordinary dipole field"
+  },
+  {
+   "id": "1e1841",
+   "name": "1E 1841-045",
+   "category": "magnetar",
+   "period_s": 11.8,
+   "pdot": 4.1e-11,
+   "source_url": "https://doi.org/10.1088/0067-0049/212/1/6",
+   "citation": "Olausen S.A. & Kaspi V.M. (2014) The McGill magnetar catalog. ApJS 212, 6",
+   "notes": "In supernova remnant Kes 73"
+  },
+  {
+   "id": "j0901",
+   "name": "PSR J0901-4046",
+   "category": "long-period",
+   "period_s": 75.9,
+   "pdot": 2.25e-13,
+   "source_url": "https://doi.org/10.1038/s41550-022-01688-x",
+   "citation": "Caleb M. et al. (2022) Discovery of a radio-emitting neutron star with an ultra-long spin period of 76 s. Nature Astronomy 6, 828",
+   "notes": "Beyond the classical death line"
+  }
+ ]
+}

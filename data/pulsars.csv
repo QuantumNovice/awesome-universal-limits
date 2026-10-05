@@ -1,0 +1,12 @@
+id,name,category,period_s,pdot,source_url,citation,notes
+j1748,PSR J1748-2446ad,millisecond,1.396e-3,1e-20,https://doi.org/10.1126/science.1123430,"Hessels J.W.T. et al. (2006) A radio pulsar spinning at 716 Hz. Science 311, 1901",Fastest known pulsar; Pdot is an upper limit (shown at 1e-20)
+j0437,PSR J0437-4715,millisecond,5.757e-3,5.73e-20,https://doi.org/10.1086/428488,"Manchester R.N. et al. (2005) The Australia Telescope National Facility pulsar catalogue. AJ 129, 1993",Nearest millisecond pulsar; recycled by a companion
+crab,Crab pulsar,pulsar,3.34e-2,4.2e-13,https://doi.org/10.1086/428488,"Manchester R.N. et al. (2005) The Australia Telescope National Facility pulsar catalogue. AJ 129, 1993",Born in the supernova of 1054
+vela,Vela pulsar,pulsar,8.93e-2,1.25e-13,https://doi.org/10.1086/428488,"Manchester R.N. et al. (2005) The Australia Telescope National Facility pulsar catalogue. AJ 129, 1993",About 11000 years old
+b1919,PSR B1919+21,pulsar,1.337,1.35e-15,https://doi.org/10.1086/428488,"Manchester R.N. et al. (2005) The Australia Telescope National Facility pulsar catalogue. AJ 129, 1993",The first pulsar discovered (1967)
+swift-j1818,Swift J1818.0-1607,magnetar,1.36,8.2e-11,https://doi.org/10.3847/2041-8213/ab9742,"Esposito P. et al. (2020) A very young radio-loud magnetar. ApJL 896, L30",Fastest-spinning magnetar; about 500 years old
+xte-j1810,XTE J1810-197,magnetar,5.54,7.7e-12,https://doi.org/10.1088/0067-0049/212/1/6,"Olausen S.A. & Kaspi V.M. (2014) The McGill magnetar catalog. ApJS 212, 6",First radio-emitting magnetar
+sgr-1806,SGR 1806-20,magnetar,7.55,7.5e-10,https://doi.org/10.1088/0067-0049/212/1/6,"Olausen S.A. & Kaspi V.M. (2014) The McGill magnetar catalog. ApJS 212, 6",Strongest known field; 2004 giant flare
+sgr-0418,SGR 0418+5729,magnetar,9.08,4e-15,https://doi.org/10.1126/science.1196088,"Rea N. et al. (2010) A low-magnetic-field soft gamma repeater. Science 330, 944",A magnetar with an ordinary dipole field
+1e1841,1E 1841-045,magnetar,11.8,4.1e-11,https://doi.org/10.1088/0067-0049/212/1/6,"Olausen S.A. & Kaspi V.M. (2014) The McGill magnetar catalog. ApJS 212, 6",In supernova remnant Kes 73
+j0901,PSR J0901-4046,long-period,75.9,2.25e-13,https://doi.org/10.1038/s41550-022-01688-x,"Caleb M. et al. (2022) Discovery of a radio-emitting neutron star with an ultra-long spin period of 76 s. Nature Astronomy 6, 828",Beyond the classical death line
