@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/ai_models.schema.json",
+  "title": "AI model size and training compute",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique id.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "description": "Label.",
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "description": "Architecture family.",
+      "type": "string",
+      "enum": [
+        "early",
+        "cnn",
+        "rnn",
+        "transformer",
+        "moe"
+      ]
+    },
+    "year": {
+      "description": "Publication year (decimal).",
+      "type": "number",
+      "minimum": 1900,
+      "maximum": 2100
+    },
+    "params_total": {
+      "description": "Total trainable parameters.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "params_active": {
+      "description": "Parameters active per token (mixture-of-experts); empty if dense.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "training_tokens": {
+      "description": "Training tokens, if reported.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "training_flop": {
+      "description": "Training compute in FLOP, if reported or derived as 6ND.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "flop_basis": {
+      "description": "How training_flop was obtained.",
+      "enum": [
+        "reported",
+        "6ND",
+        "none",
+        null
+      ]
+    },
+    "source_url": {
+      "description": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "citation": {
+      "description": "Short citation: authors, year, title, venue.",
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "description": "One line shown in the hover tooltip.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "year",
+    "source_url",
+    "citation"
+  ],
+  "additionalProperties": false
+}

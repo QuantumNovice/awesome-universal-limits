@@ -1,0 +1,34 @@
+id,benchmark,model,year,score_pct,setting,source_url,citation,notes
+imagenet-2010,imagenet,NEC-UIUC,2010.7,71.8,ILSVRC top-5 accuracy,https://doi.org/10.1007/s11263-015-0816-y,"Russakovsky O. et al. (2015) ImageNet Large Scale Visual Recognition Challenge. IJCV 115, 211",28.2 percent top-5 error
+imagenet-2011,imagenet,XRCE,2011.7,74.2,ILSVRC top-5 accuracy,https://doi.org/10.1007/s11263-015-0816-y,"Russakovsky O. et al. (2015) ImageNet Large Scale Visual Recognition Challenge. IJCV 115, 211",25.8 percent top-5 error
+imagenet-2012,imagenet,AlexNet,2012.9,84.7,ILSVRC top-5 accuracy,https://doi.org/10.1145/3065386,"Krizhevsky A., Sutskever I. & Hinton G.E. (2012) ImageNet classification with deep convolutional neural networks. NeurIPS",15.3 percent top-5 error
+imagenet-2013,imagenet,Clarifai,2013.7,88.3,ILSVRC top-5 accuracy,https://doi.org/10.1007/s11263-015-0816-y,"Russakovsky O. et al. (2015) ImageNet Large Scale Visual Recognition Challenge. IJCV 115, 211",11.7 percent top-5 error
+imagenet-2014,imagenet,GoogLeNet,2014.7,93.3,ILSVRC top-5 accuracy,https://doi.org/10.1109/CVPR.2015.7298594,"Szegedy C. et al. (2015) Going deeper with convolutions. CVPR",6.67 percent top-5 error
+imagenet-2015,imagenet,ResNet,2015.95,96.4,ILSVRC top-5 accuracy,https://doi.org/10.1109/CVPR.2016.90,"He K. et al. (2016) Deep residual learning for image recognition. CVPR",3.57 percent top-5 error (ensemble)
+imagenet-2017,imagenet,SENet,2017.6,97.7,ILSVRC top-5 accuracy,https://doi.org/10.1109/CVPR.2018.00745,"Hu J., Shen L. & Sun G. (2018) Squeeze-and-excitation networks. CVPR",2.251 percent top-5 error; last ILSVRC
+mmlu-gpt3,mmlu,GPT-3 175B,2020.7,43.9,5-shot,https://arxiv.org/abs/2009.03300,"Hendrycks D. et al. (2021) Measuring massive multitask language understanding. ICLR; arXiv:2009.03300",Benchmark introduced
+mmlu-gopher,mmlu,Gopher,2021.94,60.0,5-shot,https://arxiv.org/abs/2112.11446,"Rae J.W. et al. (2021) Scaling language models: methods, analysis & insights from training Gopher. arXiv:2112.11446",
+mmlu-chinchilla,mmlu,Chinchilla,2022.24,67.6,5-shot,https://arxiv.org/abs/2203.15556,"Hoffmann J. et al. (2022) Training compute-optimal large language models. arXiv:2203.15556",
+mmlu-flanpalm,mmlu,Flan-PaLM 540B,2022.8,75.2,5-shot,https://arxiv.org/abs/2210.11416,"Chung H.W. et al. (2022) Scaling instruction-finetuned language models. arXiv:2210.11416",
+mmlu-gpt4,mmlu,GPT-4,2023.2,86.4,5-shot,https://arxiv.org/abs/2303.08774,"OpenAI (2023) GPT-4 technical report. arXiv:2303.08774",
+mmlu-gemini,mmlu,Gemini Ultra,2023.95,90.0,CoT@32,https://arxiv.org/abs/2312.11805,"Gemini Team (2023) Gemini: a family of highly capable multimodal models. arXiv:2312.11805",Different prompting; 83.7 percent at 5-shot
+mmlu-o1,mmlu,o1,2024.7,92.3,pass@1,https://openai.com/index/learning-to-reason-with-llms/,"OpenAI (2024) Learning to reason with LLMs",Developer-reported
+gsm8k-palm,gsm8k,PaLM 540B (CoT),2022.1,56.9,8-shot chain of thought,https://arxiv.org/abs/2201.11903,"Wei J. et al. (2022) Chain-of-thought prompting elicits reasoning in large language models. arXiv:2201.11903",
+gsm8k-minerva,gsm8k,Minerva 540B,2022.5,78.5,majority vote,https://arxiv.org/abs/2206.14858,"Lewkowycz A. et al. (2022) Solving quantitative reasoning problems with language models. arXiv:2206.14858",
+gsm8k-gpt4,gsm8k,GPT-4,2023.2,92.0,5-shot chain of thought,https://arxiv.org/abs/2303.08774,"OpenAI (2023) GPT-4 technical report. arXiv:2303.08774",
+gsm8k-claude3,gsm8k,Claude 3 Opus,2024.17,95.0,0-shot chain of thought,https://www.anthropic.com/news/claude-3-family,"Anthropic (2024) Introducing the next generation of Claude",Developer-reported
+gsm8k-llama31,gsm8k,Llama 3.1 405B,2024.56,96.8,8-shot chain of thought,https://arxiv.org/abs/2407.21783,"Llama Team (2024) The Llama 3 herd of models. arXiv:2407.21783",
+gpqa-gpt4,gpqa,GPT-4 baseline,2023.88,39,best GPT-4 baseline,https://arxiv.org/abs/2311.12022,"Rein D. et al. (2023) GPQA: a graduate-level Google-proof Q&A benchmark. arXiv:2311.12022",As stated in the abstract
+gpqa-claude3,gpqa,Claude 3 Opus,2024.17,50.4,Diamond 0-shot CoT,https://www.anthropic.com/news/claude-3-family,"Anthropic (2024) Introducing the next generation of Claude",Developer-reported
+gpqa-claude35,gpqa,Claude 3.5 Sonnet,2024.47,59.4,Diamond 0-shot CoT,https://www.anthropic.com/news/claude-3-5-sonnet,"Anthropic (2024) Introducing Claude 3.5 Sonnet",Developer-reported
+gpqa-o1,gpqa,o1,2024.7,78.0,Diamond pass@1,https://openai.com/index/learning-to-reason-with-llms/,"OpenAI (2024) Learning to reason with LLMs",Developer-reported
+gpqa-gemini25,gpqa,Gemini 2.5 Pro,2025.23,84.0,Diamond pass@1,https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/,"Google DeepMind (2025) Gemini 2.5: our most intelligent AI model",Developer-reported
+swe-gpt4o,swebench,GPT-4o,2024.62,33.2,Verified,https://openai.com/index/introducing-swe-bench-verified/,"OpenAI (2024) Introducing SWE-bench Verified",Best scaffold at launch of the Verified subset
+swe-claude35,swebench,Claude 3.5 Sonnet (new),2024.81,49.0,Verified,https://www.anthropic.com/news/3-5-models-and-computer-use,"Anthropic (2024) Introducing computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku",Developer-reported
+swe-claude37,swebench,Claude 3.7 Sonnet,2025.15,62.3,Verified,https://www.anthropic.com/news/claude-3-7-sonnet,"Anthropic (2025) Claude 3.7 Sonnet and Claude Code",Developer-reported; 70.3 with custom scaffold
+swe-claude4,swebench,Claude Opus 4,2025.39,72.5,Verified,https://www.anthropic.com/news/claude-4,"Anthropic (2025) Introducing Claude 4",Developer-reported
+swe-gpt5,swebench,GPT-5,2025.6,74.9,Verified,https://openai.com/index/introducing-gpt-5/,"OpenAI (2025) Introducing GPT-5",Developer-reported
+swe-sonnet45,swebench,Claude Sonnet 4.5,2025.75,77.2,Verified,https://www.anthropic.com/news/claude-sonnet-4-5,"Anthropic (2025) Introducing Claude Sonnet 4.5",Developer-reported
+arc-architects,arcagi,the ARChitects,2024.9,53.5,ARC Prize 2024 private set,https://arxiv.org/abs/2412.04604,"Chollet F. et al. (2024) ARC Prize 2024: technical report. arXiv:2412.04604",Winning Kaggle entry
+arc-o3-low,arcagi,o3 (low compute),2024.97,75.7,semi-private set,https://arcprize.org/blog/oai-o3-pub-breakthrough,"ARC Prize (2024) OpenAI o3 breakthrough high score on ARC-AGI-Pub",Within the public compute limit
+arc-o3-high,arcagi,o3 (high compute),2024.98,87.5,semi-private set,https://arcprize.org/blog/oai-o3-pub-breakthrough,"ARC Prize (2024) OpenAI o3 breakthrough high score on ARC-AGI-Pub",172x the low-compute budget

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/ai_benchmarks.schema.json",
+  "title": "Reported AI benchmark scores",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique id.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "benchmark": {
+      "description": "Benchmark.",
+      "type": "string",
+      "enum": [
+        "imagenet",
+        "mmlu",
+        "gsm8k",
+        "gpqa",
+        "swebench",
+        "arcagi"
+      ]
+    },
+    "model": {
+      "description": "Model or system.",
+      "type": "string",
+      "minLength": 1
+    },
+    "year": {
+      "description": "Date reported (decimal year).",
+      "type": "number",
+      "minimum": 1900,
+      "maximum": 2100
+    },
+    "score_pct": {
+      "description": "Reported score, percent.",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "setting": {
+      "description": "Evaluation setting as reported.",
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "description": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "citation": {
+      "description": "Short citation: authors, year, title, venue.",
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "description": "One line shown in the hover tooltip.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "benchmark",
+    "model",
+    "year",
+    "setting",
+    "source_url",
+    "citation"
+  ],
+  "additionalProperties": false
+}
