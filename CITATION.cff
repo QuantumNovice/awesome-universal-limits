@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use these figures or data, please cite them as below, and cite the primary sources listed in docs/REFERENCES.md for any individual value."
+title: "The Allowed Universe: real objects plotted between the hard limits of physics"
+type: dataset
+authors:
+  - alias: QuantumNovice
+repository-code: "https://github.com/QuantumNovice/the-allowed-universe"
+license: CC-BY-4.0
+version: 0.2.0
+date-released: 2026-10-03
+keywords:
+  - physics
+  - physical-limits
+  - scale-comparison
+  - data-visualization
+  - log-log
+  - astrophysics
+  - open-data
+  - science-communication
+abstract: >-
+  Log-log charts that place real objects, from a hydrogen molecule to the Milky Way,
+  inside the bounds physics allows: spin, oscillation, speed, acceleration, mass,
+  density, pressure, temperature and lifetime against size; energy per kilogram and
+  power; charge, voltage, magnetic fields, radio links and light; black hole spins and
+  pulsars; chemical binding, material strength, sound, flow and volumes; organism sizes,
+  genomes and epidemic spread; buildings; AI model size, compute and benchmarks; human
+  cognition, research output and the scale of numbers. Every value carries a primary
+  source; limit lines are computed from formulas using CODATA 2022 constants. An
+  interactive Vue site draws the same data with hover tooltips.
