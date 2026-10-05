@@ -58,6 +58,6 @@ def spec() -> ChartSpec:
         lines=lines(),
         objects=obj,
         categories=PHYSICS_CATEGORIES,
-        legend_loc="center left",
+        legend_loc="lower left",
         footnote="Mechanical resonators sit under the sound line; atoms in a molecule vibrate close to it.",
     )

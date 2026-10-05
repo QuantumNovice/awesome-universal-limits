@@ -100,6 +100,62 @@
    "source_url": "https://doi.org/10.1086/147285",
    "citation": "Leighton R.B., Noyes R.W. & Simon G.W. (1962) Velocity fields in the solar atmosphere. I. ApJ 135, 474",
    "notes": "The whole surface rings with a period near 5 minutes"
+  },
+  {
+   "id": "midge",
+   "name": "Biting midge wingbeat (Forcipomyia)",
+   "category": "living",
+   "size_m": 0.001,
+   "freq_low_hz": 800.0,
+   "freq_high_hz": 950.0,
+   "freq_example_hz": 900.0,
+   "freq_max_hz": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.2307/1538496",
+   "citation": "Sotavalta O. (1953) Recordings of high wing-stroke and thoracic vibration frequency in some midges. Biol Bull 104, 439",
+   "notes": "800-950 Hz in free flight; 2218 Hz with clipped wings at 37 C (wing size approximate)"
+  },
+  {
+   "id": "vocal-folds",
+   "name": "Human vocal folds",
+   "category": "living",
+   "size_m": 0.015,
+   "freq_low_hz": 120.0,
+   "freq_high_hz": 210.0,
+   "freq_example_hz": 120.0,
+   "freq_max_hz": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1121/1.397959",
+   "citation": "Titze I.R. (1989) Physiologic and acoustic differences between male and female voices. J Acoust Soc Am 85, 1699",
+   "notes": "Speaking pitch about 120 Hz (men) to 210 Hz (women)"
+  },
+  {
+   "id": "zz-ceti",
+   "name": "Pulsating white dwarf (ZZ Ceti)",
+   "category": "astro",
+   "size_m": 12000000.0,
+   "freq_low_hz": 0.00067,
+   "freq_high_hz": 0.01,
+   "freq_example_hz": 0.0017,
+   "freq_max_hz": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1146/annurev.astro.46.060407.145250",
+   "citation": "Winget D.E. & Kepler S.O. (2008) Pulsating white dwarf stars and precision asteroseismology. ARA&A 46, 157",
+   "notes": "Periods of 100-1500 s; size of the Earth"
+  },
+  {
+   "id": "magnetar-qpo",
+   "name": "Magnetar starquake (SGR 1806-20)",
+   "category": "astro",
+   "size_m": 24000.0,
+   "freq_low_hz": 92.5,
+   "freq_high_hz": 626.5,
+   "freq_example_hz": 626.5,
+   "freq_max_hz": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1086/500735",
+   "citation": "Watts A.L. & Strohmayer T.E. (2006) Detection with RHESSI of high-frequency X-ray oscillations in the tail of the 2004 hyperflare from SGR 1806-20. ApJ 637, L117",
+   "notes": "The crust rings at 92.5 and 626.5 Hz after a giant flare"
   }
  ]
 }

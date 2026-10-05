@@ -24,7 +24,7 @@ def lines() -> list[Line]:
             "upper",
             y=L.power_planck(),
             forbidden="Forbidden: beyond the Planck power",
-            forbidden_xy=(1e8, 3e53),
+            forbidden_xy=(1e32, 3e53),
             formula="c^5 / G",
         ),
         Line(
@@ -65,7 +65,7 @@ def spec() -> ChartSpec:
         lines=lines(),
         objects=obj,
         categories=CATEGORIES,
-        legend_loc="lower right",
+        legend_loc="upper left",
         cap_label="Eddington limit for that mass",
         footnote="Rocket power is jet power (thrust x exhaust speed / 2). GW150914 radiated a thousandth of c⁵/G.",
     )

@@ -4,9 +4,9 @@
 
 **Reference lines.** A solid concrete cube as tall as the structure (dotted amber), and a solid cone with base width equal to height (dash-dot). Massive ancient and civil works sit near them:
 - The Great Pyramid (5.75 million t) is close to a solid cone.
-- The Hoover Dam (6 million t) is close to the same lines.
+- The Hoover Dam (6 million t) is close to the same lines. Grand Coulee Dam, at 22 million t of concrete, is heavier than a solid cube of its height, because it is long rather than tall.
 
-Towers and skyscrapers are mostly air. The Eiffel Tower weighs only 10,100 t. The Empire State Building weighs about 1/400 of a solid concrete cube of its height.
+Towers and skyscrapers are mostly air. The Statue of Liberty weighs about 225 t and the Eiffel Tower only 10,100 t. Masonry towers are far heavier: the Washington Monument weighs 74,000 t and the CN Tower 118,000 t, most of it in its buried foundation. The Empire State Building weighs about 1/400 of a solid concrete cube of its height.
 
 **Vertical lines.** The heights at which a uniform concrete (1.7 km) or steel (4.6 km) column would crush its own base. See the buildings chart for those limits.
 

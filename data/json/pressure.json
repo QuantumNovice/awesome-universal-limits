@@ -114,6 +114,76 @@
    "source_url": "https://doi.org/10.1038/s41586-018-0060-z",
    "citation": "Burkert V.D., Elouadrhiri L. & Girod F.X. (2018) The pressure distribution inside the proton. Nature 557, 396",
    "notes": "Peak near the centre: higher than in neutron stars"
+  },
+  {
+   "id": "uhv-record",
+   "name": "Best laboratory vacuum",
+   "category": "lab",
+   "size_m": 0.5,
+   "pressure_low_pa": null,
+   "pressure_high_pa": null,
+   "pressure_example_pa": 1.3e-11,
+   "pressure_max_pa": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1116/1.575916",
+   "citation": "Ishimaru H. (1989) Ultimate pressure of the order of 1e-13 Torr in an aluminum alloy vacuum chamber. J Vac Sci Technol A 7, 2439",
+   "notes": "1e-13 Torr: a few thousand molecules per cubic centimetre (chamber size approximate)"
+  },
+  {
+   "id": "sunlight",
+   "name": "Sunlight at Earth's orbit",
+   "category": "astro",
+   "size_m": 299000000000.0,
+   "pressure_low_pa": null,
+   "pressure_high_pa": null,
+   "pressure_example_pa": 4.54e-06,
+   "pressure_max_pa": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1029/2010GL045777",
+   "citation": "Kopp G. & Lean J.L. (2011) A new, lower value of total solar irradiance: evidence and climate significance. GRL 38, L01706",
+   "notes": "Radiation pressure S/c of fully absorbed sunlight (computed from 1360.8 W/m2)"
+  },
+  {
+   "id": "jupiter-core",
+   "name": "Jupiter's centre",
+   "category": "astro",
+   "size_m": 142980000.0,
+   "pressure_low_pa": null,
+   "pressure_high_pa": null,
+   "pressure_example_pa": 4000000000000.0,
+   "pressure_max_pa": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1146/annurev.earth.32.101802.120325",
+   "citation": "Guillot T. (2005) The interiors of giant planets: models and outstanding questions. Annu Rev Earth Planet Sci 33, 493",
+   "notes": "About 40 Mbar at the centre (model dependent)"
+  },
+  {
+   "id": "nif-hotspot",
+   "name": "Laser fusion hot spot (NIF)",
+   "category": "lab",
+   "size_m": 6e-05,
+   "pressure_low_pa": null,
+   "pressure_high_pa": null,
+   "pressure_example_pa": 1.5e+16,
+   "pressure_max_pa": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1038/nature13008",
+   "citation": "Hurricane O.A. et al. (2014) Fuel gain exceeding unity in an inertially confined fusion implosion. Nature 506, 343",
+   "notes": "About 150 Gbar in a hot spot tens of microns across (size approximate)"
+  },
+  {
+   "id": "neutron-star-core",
+   "name": "Neutron star core",
+   "category": "astro",
+   "size_m": 24000.0,
+   "pressure_low_pa": 1e+33,
+   "pressure_high_pa": 5e+34,
+   "pressure_example_pa": 1e+34,
+   "pressure_max_pa": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1146/annurev-astro-081915-023322",
+   "citation": "Ozel F. & Freire P. (2016) Masses, radii, and the equation of state of neutron stars. ARA&A 54, 401",
+   "notes": "Central pressure of a 1.4 Msun star is of order 1e34 Pa (equation of state dependent)"
   }
  ]
 }

@@ -86,6 +86,62 @@
    "source_url": "https://www.britannica.com/topic/Pyramids-of-Giza",
    "citation": "Encyclopaedia Britannica, Pyramids of Giza",
    "notes": "About 2.3 million blocks of about 2.5 t each; original height"
+  },
+  {
+   "id": "statue-liberty",
+   "name": "Statue of Liberty",
+   "category": "tower",
+   "height_m": 92.99,
+   "mass_low_kg": null,
+   "mass_high_kg": 254000.0,
+   "mass_example_kg": 204000.0,
+   "mass_max_kg": null,
+   "max_basis": null,
+   "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+   "citation": "U.S. National Park Service, Statue of Liberty: statue statistics",
+   "notes": "225 tons of copper and steel (a newer estimate is 254 t)"
+  },
+  {
+   "id": "washington-monument",
+   "name": "Washington Monument",
+   "category": "tower",
+   "height_m": 169.3,
+   "mass_low_kg": null,
+   "mass_high_kg": null,
+   "mass_example_kg": 73600000.0,
+   "mass_max_kg": null,
+   "max_basis": null,
+   "source_url": "https://www.docsteach.org/documents/document/washington-monument-washington-dc",
+   "citation": "U.S. National Archives (DocsTeach), Washington Monument, Washington, DC (555 ft 5 1/8 in high, 81120 tons)",
+   "notes": "Solid marble and granite masonry"
+  },
+  {
+   "id": "cn-tower",
+   "name": "CN Tower",
+   "category": "tower",
+   "height_m": 553.33,
+   "mass_low_kg": null,
+   "mass_high_kg": null,
+   "mass_example_kg": 117900000.0,
+   "mass_max_kg": null,
+   "max_basis": null,
+   "source_url": "https://www.cntower.ca/history",
+   "citation": "CN Tower, History and facts (117910 metric tonnes)",
+   "notes": "Most of the mass is in the buried foundation and concrete shaft"
+  },
+  {
+   "id": "grand-coulee",
+   "name": "Grand Coulee Dam",
+   "category": "dam",
+   "height_m": 168.0,
+   "mass_low_kg": null,
+   "mass_high_kg": null,
+   "mass_example_kg": 22000000000.0,
+   "mass_max_kg": null,
+   "max_basis": null,
+   "source_url": "https://www.usbr.gov/pn/grandcoulee/pubs/factsheet.pdf",
+   "citation": "U.S. Bureau of Reclamation, Grand Coulee Dam statistics and facts (11975521 cubic yards of concrete)",
+   "notes": "Computed from the concrete volume at 2400 kg/m3"
   }
  ]
 }

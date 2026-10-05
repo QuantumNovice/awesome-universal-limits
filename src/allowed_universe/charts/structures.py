@@ -60,7 +60,7 @@ def spec() -> ChartSpec:
         xlabel="Height, m",
         ylabel="Mass, kg",
         xlim=(50, 6000),
-        ylim=(1e6, 1e13),
+        ylim=(1e5, 1e13),
         lines=lines(),
         objects=obj,
         categories=CATEGORIES,

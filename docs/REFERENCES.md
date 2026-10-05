@@ -37,7 +37,11 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 4. ISO 16:1975 Acoustics: standard tuning frequency (440 Hz). <https://www.iso.org/standard/3601.html>
 5. Park J. et al. (2005) Earth's free oscillations excited by the 26 December 2004 Sumatra-Andaman earthquake. Science 308, 1139. <https://doi.org/10.1126/science.1112305>
 6. Leighton R.B., Noyes R.W. & Simon G.W. (1962) Velocity fields in the solar atmosphere. I. ApJ 135, 474. <https://doi.org/10.1086/147285>
-7. Trachenko K. et al. (2020) Speed of sound from fundamental physical constants. Science Advances 6, eabc8662. <https://doi.org/10.1126/sciadv.abc8662>
+7. Sotavalta O. (1953) Recordings of high wing-stroke and thoracic vibration frequency in some midges. Biol Bull 104, 439. <https://doi.org/10.2307/1538496>
+8. Titze I.R. (1989) Physiologic and acoustic differences between male and female voices. J Acoust Soc Am 85, 1699. <https://doi.org/10.1121/1.397959>
+9. Winget D.E. & Kepler S.O. (2008) Pulsating white dwarf stars and precision asteroseismology. ARA&A 46, 157. <https://doi.org/10.1146/annurev.astro.46.060407.145250>
+10. Watts A.L. & Strohmayer T.E. (2006) Detection with RHESSI of high-frequency X-ray oscillations in the tail of the 2004 hyperflare from SGR 1806-20. ApJ 637, L117. <https://doi.org/10.1086/500735>
+11. Trachenko K. et al. (2020) Speed of sound from fundamental physical constants. Science Advances 6, eabc8662. <https://doi.org/10.1126/sciadv.abc8662>
 
 ## speed
 
@@ -116,6 +120,11 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 4. Dubrovinskaia N. et al. (2016) Terapascal static pressure generation with ultrahigh yield strength nanodiamond. Science Advances 2, e1600341. <https://doi.org/10.1126/sciadv.1600341>
 5. Williams D.R., NASA Sun Fact Sheet, NSSDCA (2024). <https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html>
 6. Burkert V.D., Elouadrhiri L. & Girod F.X. (2018) The pressure distribution inside the proton. Nature 557, 396. <https://doi.org/10.1038/s41586-018-0060-z>
+7. Ishimaru H. (1989) Ultimate pressure of the order of 1e-13 Torr in an aluminum alloy vacuum chamber. J Vac Sci Technol A 7, 2439. <https://doi.org/10.1116/1.575916>
+8. Kopp G. & Lean J.L. (2011) A new, lower value of total solar irradiance: evidence and climate significance. GRL 38, L01706. <https://doi.org/10.1029/2010GL045777>
+9. Guillot T. (2005) The interiors of giant planets: models and outstanding questions. Annu Rev Earth Planet Sci 33, 493. <https://doi.org/10.1146/annurev.earth.32.101802.120325>
+10. Hurricane O.A. et al. (2014) Fuel gain exceeding unity in an inertially confined fusion implosion. Nature 506, 343. <https://doi.org/10.1038/nature13008>
+11. Ozel F. & Freire P. (2016) Masses, radii, and the equation of state of neutron stars. ARA&A 54, 401. <https://doi.org/10.1146/annurev-astro-081915-023322>
 
 ## temperature
 
@@ -168,6 +177,12 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 4. Williams D.R., NASA Sun Fact Sheet, NSSDCA (2024). <https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html>
 5. Wolf C. et al. (2024) The accretion of a solar mass per day by a 17-billion solar mass black hole. Nature Astronomy 8, 520. <https://doi.org/10.1038/s41550-024-02195-x>
 6. Abbott B.P. et al. (2016) Observation of gravitational waves from a binary black hole merger. PRL 116, 061102. <https://doi.org/10.1103/PhysRevLett.116.061102>
+7. Henry C.J.K. (2005) Basal metabolic rate studies in humans: measurement and development of new equations. Public Health Nutr 8, 1133. <https://doi.org/10.1079/PHN2005801>
+8. Dorel S. et al. (2005) Torque and power-velocity relationships in cycling: relevance to track sprint performance in world-class cyclists. Int J Sports Med 26, 739. <https://doi.org/10.1055/s-2004-830493>
+9. Davies J.H. & Davies D.R. (2010) Earth's surface heat flux. Solid Earth 1, 5. <https://doi.org/10.5194/se-1-5-2010>
+10. Li L. et al. (2018) Less absorbed solar energy and more internal heat for Jupiter. Nat Commun 9, 3709. <https://doi.org/10.1038/s41467-018-06107-2>
+11. Hester J.J. (2008) The Crab Nebula: an astrophysical chimera. ARA&A 46, 127. <https://doi.org/10.1146/annurev.astro.45.051806.110608>
+12. Crowther P.A. et al. (2010) The R136 star cluster hosts several stars whose individual masses greatly exceed the accepted 150 Msun stellar mass limit. MNRAS 408, 731. <https://doi.org/10.1111/j.1365-2966.2010.17167.x>
 
 ## charge
 
@@ -260,7 +275,14 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 5. Abbott B.P. et al. (2016) Observation of gravitational waves from a binary black hole merger. PRL 116, 061102. <https://doi.org/10.1103/PhysRevLett.116.061102>
 6. Abbott R. et al. (2020) GW190521: a binary black hole merger with a total mass of 150 Msun. PRL 125, 101102. <https://doi.org/10.1103/PhysRevLett.125.101102>
 7. Event Horizon Telescope Collaboration (2019) First M87 Event Horizon Telescope Results. I. ApJL 875, L1. <https://doi.org/10.3847/2041-8213/ab0ec7>
-8. Thorne K.S. (1974) Disk-accretion onto a black hole. II. Evolution of the hole. ApJ 191, 507. <https://doi.org/10.1086/152991>
+8. Shafee R. et al. (2006) Estimating the spin of stellar-mass black holes by spectral fitting of the X-ray continuum. ApJ 636, L113. <https://doi.org/10.1086/498938>
+9. Liu J. et al. (2008) Precise measurement of the spin parameter of the stellar-mass black hole M33 X-7. ApJ 679, L37. <https://doi.org/10.1086/588840>
+10. Steiner J.F. et al. (2011) The spin of the black hole microquasar XTE J1550-564 via the continuum-fitting and Fe-line methods. MNRAS 416, 941. <https://doi.org/10.1111/j.1365-2966.2011.19089.x>
+11. Abbott B.P. et al. (2016) GW151226: observation of gravitational waves from a 22-solar-mass binary black hole coalescence. PRL 116, 241103. <https://doi.org/10.1103/PhysRevLett.116.241103>
+12. Abbott B.P. et al. (2017) GW170104: observation of a 50-solar-mass binary black hole coalescence at redshift 0.2. PRL 118, 221101. <https://doi.org/10.1103/PhysRevLett.118.221101>
+13. Brenneman L.W. & Reynolds C.S. (2006) Constraining black hole spin via X-ray spectroscopy. ApJ 652, 1028. <https://doi.org/10.1086/508146>
+14. Risaliti G. et al. (2013) A rapidly spinning supermassive black hole at the centre of NGC 1365. Nature 494, 449. <https://doi.org/10.1038/nature11938>
+15. Thorne K.S. (1974) Disk-accretion onto a black hole. II. Evolution of the hole. ApJ 191, 507. <https://doi.org/10.1086/152991>
 
 ## pulsars
 
@@ -307,6 +329,7 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 4. Cummings W.C. & Thompson P.O. (1971) Underwater sounds from the blue whale, Balaenoptera musculus. J Acoust Soc Am 50, 1193. <https://doi.org/10.1121/1.1912752>
 5. Versluis M. et al. (2000) How snapping shrimp snap: through cavitating bubbles. Science 289, 2114. <https://doi.org/10.1126/science.289.5487.2114>
 6. Mohl B. et al. (2003) The monopulsed nature of sperm whale clicks. J Acoust Soc Am 114, 1143. <https://doi.org/10.1121/1.1586258>
+7. Surlykke A. & Kalko E.K.V. (2008) Echolocating bats cry out loud to detect their prey. PLoS ONE 3, e2036. <https://doi.org/10.1371/journal.pone.0002036>
 
 ## flow
 
@@ -316,6 +339,7 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 4. Dai A. & Trenberth K.E. (2002) Estimates of freshwater discharge from continents: latitudinal and seasonal variations. J Hydrometeorol 3, 660. <https://doi.org/10.1175/1525-7541(2002)003<0660:EOFDFC>2.0.CO;2>
 5. Meinen C.S., Baringer M.O. & Garcia R.F. (2010) Florida Current transport variability: an analysis of annual and longer-period signals. Deep-Sea Res I 57, 835. <https://doi.org/10.1016/j.dsr.2010.04.001>
 6. Donohue K.A. et al. (2016) Mean Antarctic Circumpolar Current transport measured in Drake Passage. GRL 43, 11760. <https://doi.org/10.1002/2016GL070319>
+7. McCarthy G.D. et al. (2015) Measuring the Atlantic Meridional Overturning Circulation at 26 N. Prog Oceanogr 130, 91. <https://doi.org/10.1016/j.pocean.2014.10.006>
 
 ## volumes
 
@@ -397,6 +421,10 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 3. Tata Steel, Burj Khalifa case study (330000 m3 of concrete and 39000 t of steel rebar). <https://tatasteeleurope.com/construction/case-studies/burj-khalifa>
 4. U.S. Bureau of Reclamation, Hoover Dam FAQs. <https://www.usbr.gov/lc/hooverdam/faqs/damfaqs.html>
 5. Encyclopaedia Britannica, Pyramids of Giza. <https://www.britannica.com/topic/Pyramids-of-Giza>
+6. U.S. National Park Service, Statue of Liberty: statue statistics. <https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm>
+7. U.S. National Archives (DocsTeach), Washington Monument, Washington, DC (555 ft 5 1/8 in high, 81120 tons). <https://www.docsteach.org/documents/document/washington-monument-washington-dc>
+8. CN Tower, History and facts (117910 metric tonnes). <https://www.cntower.ca/history>
+9. U.S. Bureau of Reclamation, Grand Coulee Dam statistics and facts (11975521 cubic yards of concrete). <https://www.usbr.gov/pn/grandcoulee/pubs/factsheet.pdf>
 
 ## ai_models
 

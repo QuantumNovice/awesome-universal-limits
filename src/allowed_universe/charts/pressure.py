@@ -57,5 +57,5 @@ def spec() -> ChartSpec:
         lines=lines(),
         objects=obj,
         categories=CATEGORIES,
-        legend_loc="lower left",
+        legend_loc="upper right",
     )

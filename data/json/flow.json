@@ -100,6 +100,62 @@
    "source_url": "https://doi.org/10.1002/2016GL070319",
    "citation": "Donohue K.A. et al. (2016) Mean Antarctic Circumpolar Current transport measured in Drake Passage. GRL 43, 11760",
    "notes": "173.3 Sv through Drake Passage (about 800 km wide): the largest current on Earth"
+  },
+  {
+   "id": "congo",
+   "name": "Congo River",
+   "category": "earth",
+   "width_m": 1500.0,
+   "flow_low_m3_s": null,
+   "flow_high_m3_s": null,
+   "flow_example_m3_s": 41400.0,
+   "flow_max_m3_s": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1175/1525-7541(2002)003<0660:EOFDFC>2.0.CO;2",
+   "citation": "Dai A. & Trenberth K.E. (2002) Estimates of freshwater discharge from continents: latitudinal and seasonal variations. J Hydrometeorol 3, 660",
+   "notes": "1308 km3 per year at the mouth; width at Kinshasa approximate"
+  },
+  {
+   "id": "mississippi",
+   "name": "Mississippi River",
+   "category": "earth",
+   "width_m": 1000.0,
+   "flow_low_m3_s": null,
+   "flow_high_m3_s": null,
+   "flow_example_m3_s": 19300.0,
+   "flow_max_m3_s": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1175/1525-7541(2002)003<0660:EOFDFC>2.0.CO;2",
+   "citation": "Dai A. & Trenberth K.E. (2002) Estimates of freshwater discharge from continents: latitudinal and seasonal variations. J Hydrometeorol 3, 660",
+   "notes": "610 km3 per year at the mouth; width at Vicksburg approximate"
+  },
+  {
+   "id": "danube",
+   "name": "Danube River",
+   "category": "earth",
+   "width_m": 600.0,
+   "flow_low_m3_s": null,
+   "flow_high_m3_s": null,
+   "flow_example_m3_s": 6400.0,
+   "flow_max_m3_s": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1175/1525-7541(2002)003<0660:EOFDFC>2.0.CO;2",
+   "citation": "Dai A. & Trenberth K.E. (2002) Estimates of freshwater discharge from continents: latitudinal and seasonal variations. J Hydrometeorol 3, 660",
+   "notes": "202 km3 per year at the mouth; width approximate"
+  },
+  {
+   "id": "amoc",
+   "name": "Atlantic overturning circulation at 26 N",
+   "category": "earth",
+   "width_m": 6000000.0,
+   "flow_low_m3_s": null,
+   "flow_high_m3_s": null,
+   "flow_example_m3_s": 17200000.0,
+   "flow_max_m3_s": null,
+   "max_basis": null,
+   "source_url": "https://doi.org/10.1016/j.pocean.2014.10.006",
+   "citation": "McCarthy G.D. et al. (2015) Measuring the Atlantic Meridional Overturning Circulation at 26 N. Prog Oceanogr 130, 91",
+   "notes": "17.2 Sv northward across the whole basin (basin width approximate)"
   }
  ]
 }
