@@ -1,0 +1,151 @@
+{
+ "dataset": "energy_density",
+ "title": "Stored energy per kilogram",
+ "license": "CC-BY-4.0",
+ "columns": {
+  "id": "Unique id.",
+  "name": "Label.",
+  "panel": "Which panel of the figure.",
+  "category": "Kind.",
+  "value": "Representative value.",
+  "low": "Low end of the reported range; empty if none.",
+  "high": "High end of the reported range; empty if none.",
+  "source_url": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+  "citation": "Short citation: authors, year, title, venue.",
+  "notes": "One line shown in the hover tooltip."
+ },
+ "rows": [
+  {
+   "id": "pumped-hydro",
+   "name": "Pumped hydro (water lifted 100-800 m)",
+   "panel": "store",
+   "category": "gravitational",
+   "value": 3900.0,
+   "low": 981.0,
+   "high": 7845.0,
+   "source_url": "https://doi.org/10.1039/C8EE01419A",
+   "citation": "Gur T.M. (2018) Review of electrical energy storage technologies, materials and systems: challenges and prospects for large-scale grid storage. Energy Environ Sci 11, 2696",
+   "notes": "Computed as g x h for typical head heights"
+  },
+  {
+   "id": "supercapacitor",
+   "name": "Supercapacitor",
+   "panel": "store",
+   "category": "electrochemical",
+   "value": 36000.0,
+   "low": 9000.0,
+   "high": 54000.0,
+   "source_url": "https://doi.org/10.1039/C8EE01419A",
+   "citation": "Gur T.M. (2018) Review of electrical energy storage technologies, materials and systems: challenges and prospects for large-scale grid storage. Energy Environ Sci 11, 2696",
+   "notes": "2.5-15 Wh/kg"
+  },
+  {
+   "id": "lead-acid",
+   "name": "Lead-acid battery",
+   "panel": "store",
+   "category": "electrochemical",
+   "value": 144000.0,
+   "low": 108000.0,
+   "high": 180000.0,
+   "source_url": "https://doi.org/10.1039/C8EE01419A",
+   "citation": "Gur T.M. (2018) Review of electrical energy storage technologies, materials and systems: challenges and prospects for large-scale grid storage. Energy Environ Sci 11, 2696",
+   "notes": "30-50 Wh/kg"
+  },
+  {
+   "id": "li-ion",
+   "name": "Lithium-ion battery",
+   "panel": "store",
+   "category": "electrochemical",
+   "value": 900000.0,
+   "low": 360000.0,
+   "high": 954000.0,
+   "source_url": "https://doi.org/10.1039/C8EE01419A",
+   "citation": "Gur T.M. (2018) Review of electrical energy storage technologies, materials and systems: challenges and prospects for large-scale grid storage. Energy Environ Sci 11, 2696",
+   "notes": "100-265 Wh/kg at cell level"
+  },
+  {
+   "id": "tnt",
+   "name": "TNT",
+   "panel": "store",
+   "category": "chemical",
+   "value": 4184000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
+   "citation": "NIST Special Publication 811, Appendix B.8: 1 ton of TNT = 4.184e9 J",
+   "notes": "Explosives release energy fast but store little of it"
+  },
+  {
+   "id": "body-fat",
+   "name": "Body fat",
+   "panel": "store",
+   "category": "chemical",
+   "value": 37000000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://www.fao.org/3/y5022e/y5022e00.htm",
+   "citation": "FAO (2003) Food energy: methods of analysis and conversion factors. FAO Food and Nutrition Paper 77",
+   "notes": "About 37 kJ per gram of fat"
+  },
+  {
+   "id": "gasoline",
+   "name": "Gasoline",
+   "panel": "store",
+   "category": "chemical",
+   "value": 44000000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://www.energy.gov/eere/fuelcells/hydrogen-storage",
+   "citation": "U.S. Department of Energy, Hydrogen Storage: 120 MJ/kg for hydrogen versus 44 MJ/kg for gasoline",
+   "notes": "Lower heating value"
+  },
+  {
+   "id": "hydrogen",
+   "name": "Hydrogen fuel",
+   "panel": "store",
+   "category": "chemical",
+   "value": 120000000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://www.energy.gov/eere/fuelcells/hydrogen-storage",
+   "citation": "U.S. Department of Energy, Hydrogen Storage: 120 MJ/kg for hydrogen versus 44 MJ/kg for gasoline",
+   "notes": "Highest of any chemical fuel"
+  },
+  {
+   "id": "fission",
+   "name": "Uranium-235 fission",
+   "panel": "store",
+   "category": "nuclear",
+   "value": 82100000000000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://world-nuclear.org/information-library/nuclear-fuel-cycle/introduction/physics-of-nuclear-energy",
+   "citation": "World Nuclear Association, Physics of uranium and nuclear energy (about 200 MeV per fission)",
+   "notes": "200 MeV per 235 u: two million times gasoline"
+  },
+  {
+   "id": "fusion",
+   "name": "Deuterium-tritium fusion",
+   "panel": "store",
+   "category": "nuclear",
+   "value": 338000000000000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://www.iter.org/fusion-energy",
+   "citation": "ITER Organization, What is fusion? (D-T reaction releases 17.6 MeV)",
+   "notes": "17.6 MeV per 5.03 u of fuel"
+  },
+  {
+   "id": "bh-accretion",
+   "name": "Accretion onto a black hole",
+   "panel": "store",
+   "category": "nuclear",
+   "value": 2.88e+16,
+   "low": 5120000000000000.0,
+   "high": 3.8e+16,
+   "source_url": "https://doi.org/10.1086/152991",
+   "citation": "Thorne K.S. (1974) Disk-accretion onto a black hole. II. Evolution of the hole. ApJ 191, 507",
+   "notes": "5.7% of mc^2 (no spin) to 32% (spin 0.998); 42% for a = 1"
+  }
+ ]
+}
