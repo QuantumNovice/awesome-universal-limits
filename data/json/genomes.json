@@ -1,0 +1,187 @@
+{
+ "dataset": "genomes",
+ "title": "Genome size vs number of genes",
+ "license": "CC-BY-4.0",
+ "columns": {
+  "id": "Unique id.",
+  "name": "Label.",
+  "category": "Kingdom.",
+  "genome_bp": "Genome length in base pairs (nucleotides for RNA viruses).",
+  "genes": "Protein-coding genes.",
+  "source_url": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+  "citation": "Short citation: authors, year, title, venue.",
+  "notes": "One line shown in the hover tooltip."
+ },
+ "rows": [
+  {
+   "id": "ms2",
+   "name": "Phage MS2 (RNA)",
+   "category": "virus",
+   "genome_bp": 3569.0,
+   "genes": 4,
+   "source_url": "https://doi.org/10.1038/260500a0",
+   "citation": "Fiers W. et al. (1976) Complete nucleotide sequence of bacteriophage MS2 RNA. Nature 260, 500",
+   "notes": "First genome ever sequenced"
+  },
+  {
+   "id": "sars-cov-2",
+   "name": "SARS-CoV-2 (RNA)",
+   "category": "virus",
+   "genome_bp": 29903.0,
+   "genes": 12,
+   "source_url": "https://doi.org/10.1038/s41586-020-2008-3",
+   "citation": "Wu F. et al. (2020) A new coronavirus associated with human respiratory disease in China. Nature 579, 265",
+   "notes": "About a dozen open reading frames (approximate)"
+  },
+  {
+   "id": "lambda",
+   "name": "Phage lambda",
+   "category": "virus",
+   "genome_bp": 48502.0,
+   "genes": 70,
+   "source_url": "https://doi.org/10.1016/0022-2836(82)90546-0",
+   "citation": "Sanger F. et al. (1982) Nucleotide sequence of bacteriophage lambda DNA. J Mol Biol 162, 729",
+   "notes": "About 70 genes (approximate)"
+  },
+  {
+   "id": "nasuia",
+   "name": "Nasuia deltocephalinicola",
+   "category": "bacterium",
+   "genome_bp": 112091.0,
+   "genes": 137,
+   "source_url": "https://doi.org/10.1093/gbe/evt118",
+   "citation": "Bennett G.M. & Moran N.A. (2013) Small, smaller, smallest: the origins and evolution of ancient dual symbioses in a phloem-feeding insect. Genome Biol Evol 5, 1675",
+   "notes": "Smallest known bacterial genome (an insect symbiont)"
+  },
+  {
+   "id": "carsonella",
+   "name": "Carsonella ruddii",
+   "category": "bacterium",
+   "genome_bp": 159662.0,
+   "genes": 182,
+   "source_url": "https://doi.org/10.1126/science.1134196",
+   "citation": "Nakabachi A. et al. (2006) The 160-kilobase genome of the bacterial endosymbiont Carsonella. Science 314, 267",
+   "notes": null
+  },
+  {
+   "id": "jcvi-syn3",
+   "name": "JCVI-syn3.0 minimal cell",
+   "category": "bacterium",
+   "genome_bp": 531560.0,
+   "genes": 438,
+   "source_url": "https://doi.org/10.1126/science.aad6253",
+   "citation": "Hutchison C.A. et al. (2016) Design and synthesis of a minimal bacterial genome. Science 351, aad6253",
+   "notes": "Synthetic: the fewest genes a free-living cell has needed so far"
+  },
+  {
+   "id": "mycoplasma",
+   "name": "Mycoplasma genitalium",
+   "category": "bacterium",
+   "genome_bp": 580070.0,
+   "genes": 470,
+   "source_url": "https://doi.org/10.1126/science.270.5235.397",
+   "citation": "Fraser C.M. et al. (1995) The minimal gene complement of Mycoplasma genitalium. Science 270, 397",
+   "notes": null
+  },
+  {
+   "id": "mimivirus",
+   "name": "Mimivirus",
+   "category": "virus",
+   "genome_bp": 1181404.0,
+   "genes": 911,
+   "source_url": "https://doi.org/10.1126/science.1101485",
+   "citation": "Raoult D. et al. (2004) The 1.2-megabase genome sequence of Mimivirus. Science 306, 1344",
+   "notes": "A virus with more genes than some bacteria"
+  },
+  {
+   "id": "pandoravirus",
+   "name": "Pandoravirus salinus",
+   "category": "virus",
+   "genome_bp": 2473870.0,
+   "genes": 2556,
+   "source_url": "https://doi.org/10.1126/science.1239181",
+   "citation": "Philippe N. et al. (2013) Pandoraviruses: amoeba viruses with genomes up to 2.5 Mb reaching that of parasitic eukaryotes. Science 341, 281",
+   "notes": null
+  },
+  {
+   "id": "e-coli",
+   "name": "E. coli K-12",
+   "category": "bacterium",
+   "genome_bp": 4639221.0,
+   "genes": 4288,
+   "source_url": "https://doi.org/10.1126/science.277.5331.1453",
+   "citation": "Blattner F.R. et al. (1997) The complete genome sequence of Escherichia coli K-12. Science 277, 1453",
+   "notes": null
+  },
+  {
+   "id": "yeast",
+   "name": "Baker's yeast",
+   "category": "fungus",
+   "genome_bp": 12070000.0,
+   "genes": 5885,
+   "source_url": "https://doi.org/10.1126/science.274.5287.546",
+   "citation": "Goffeau A. et al. (1996) Life with 6000 genes. Science 274, 546",
+   "notes": null
+  },
+  {
+   "id": "worm",
+   "name": "C. elegans",
+   "category": "animal",
+   "genome_bp": 97000000.0,
+   "genes": 19099,
+   "source_url": "https://doi.org/10.1126/science.282.5396.2012",
+   "citation": "C. elegans Sequencing Consortium (1998) Genome sequence of the nematode C. elegans: a platform for investigating biology. Science 282, 2012",
+   "notes": null
+  },
+  {
+   "id": "arabidopsis",
+   "name": "Arabidopsis thaliana",
+   "category": "plant",
+   "genome_bp": 125000000.0,
+   "genes": 25498,
+   "source_url": "https://doi.org/10.1038/35048692",
+   "citation": "Arabidopsis Genome Initiative (2000) Analysis of the genome sequence of the flowering plant Arabidopsis thaliana. Nature 408, 796",
+   "notes": null
+  },
+  {
+   "id": "fruit-fly",
+   "name": "Fruit fly",
+   "category": "animal",
+   "genome_bp": 180000000.0,
+   "genes": 13600,
+   "source_url": "https://doi.org/10.1126/science.287.5461.2185",
+   "citation": "Adams M.D. et al. (2000) The genome sequence of Drosophila melanogaster. Science 287, 2185",
+   "notes": null
+  },
+  {
+   "id": "human",
+   "name": "Human (T2T)",
+   "category": "animal",
+   "genome_bp": 3055000000.0,
+   "genes": 19969,
+   "source_url": "https://doi.org/10.1126/science.abj6987",
+   "citation": "Nurk S. et al. (2022) The complete sequence of a human genome. Science 376, 44",
+   "notes": "About 1 m of DNA per cell copy"
+  },
+  {
+   "id": "axolotl",
+   "name": "Axolotl",
+   "category": "animal",
+   "genome_bp": 32000000000.0,
+   "genes": 23000,
+   "source_url": "https://doi.org/10.1038/nature25458",
+   "citation": "Nowoshilow S. et al. (2018) The axolotl genome and the evolution of key tissue formation regulators. Nature 554, 50",
+   "notes": "Gene count approximate"
+  },
+  {
+   "id": "lungfish",
+   "name": "Australian lungfish",
+   "category": "animal",
+   "genome_bp": 43000000000.0,
+   "genes": 31000,
+   "source_url": "https://doi.org/10.1038/s41586-021-03198-8",
+   "citation": "Meyer A. et al. (2021) Giant lungfish genome elucidates the conquest of land by vertebrates. Nature 590, 284",
+   "notes": "Largest sequenced animal genome; gene count approximate"
+  }
+ ]
+}

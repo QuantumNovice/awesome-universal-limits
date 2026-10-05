@@ -1,0 +1,18 @@
+id,name,category,genome_bp,genes,source_url,citation,notes
+ms2,Phage MS2 (RNA),virus,3569,4,https://doi.org/10.1038/260500a0,"Fiers W. et al. (1976) Complete nucleotide sequence of bacteriophage MS2 RNA. Nature 260, 500",First genome ever sequenced
+sars-cov-2,SARS-CoV-2 (RNA),virus,29903,12,https://doi.org/10.1038/s41586-020-2008-3,"Wu F. et al. (2020) A new coronavirus associated with human respiratory disease in China. Nature 579, 265",About a dozen open reading frames (approximate)
+lambda,Phage lambda,virus,48502,70,https://doi.org/10.1016/0022-2836(82)90546-0,"Sanger F. et al. (1982) Nucleotide sequence of bacteriophage lambda DNA. J Mol Biol 162, 729",About 70 genes (approximate)
+nasuia,Nasuia deltocephalinicola,bacterium,112091,137,https://doi.org/10.1093/gbe/evt118,"Bennett G.M. & Moran N.A. (2013) Small, smaller, smallest: the origins and evolution of ancient dual symbioses in a phloem-feeding insect. Genome Biol Evol 5, 1675",Smallest known bacterial genome (an insect symbiont)
+carsonella,Carsonella ruddii,bacterium,159662,182,https://doi.org/10.1126/science.1134196,"Nakabachi A. et al. (2006) The 160-kilobase genome of the bacterial endosymbiont Carsonella. Science 314, 267",
+jcvi-syn3,JCVI-syn3.0 minimal cell,bacterium,531560,438,https://doi.org/10.1126/science.aad6253,"Hutchison C.A. et al. (2016) Design and synthesis of a minimal bacterial genome. Science 351, aad6253",Synthetic: the fewest genes a free-living cell has needed so far
+mycoplasma,Mycoplasma genitalium,bacterium,580070,470,https://doi.org/10.1126/science.270.5235.397,"Fraser C.M. et al. (1995) The minimal gene complement of Mycoplasma genitalium. Science 270, 397",
+mimivirus,Mimivirus,virus,1181404,911,https://doi.org/10.1126/science.1101485,"Raoult D. et al. (2004) The 1.2-megabase genome sequence of Mimivirus. Science 306, 1344",A virus with more genes than some bacteria
+pandoravirus,Pandoravirus salinus,virus,2473870,2556,https://doi.org/10.1126/science.1239181,"Philippe N. et al. (2013) Pandoraviruses: amoeba viruses with genomes up to 2.5 Mb reaching that of parasitic eukaryotes. Science 341, 281",
+e-coli,E. coli K-12,bacterium,4639221,4288,https://doi.org/10.1126/science.277.5331.1453,"Blattner F.R. et al. (1997) The complete genome sequence of Escherichia coli K-12. Science 277, 1453",
+yeast,Baker's yeast,fungus,1.207e7,5885,https://doi.org/10.1126/science.274.5287.546,"Goffeau A. et al. (1996) Life with 6000 genes. Science 274, 546",
+worm,C. elegans,animal,9.7e7,19099,https://doi.org/10.1126/science.282.5396.2012,"C. elegans Sequencing Consortium (1998) Genome sequence of the nematode C. elegans: a platform for investigating biology. Science 282, 2012",
+arabidopsis,Arabidopsis thaliana,plant,1.25e8,25498,https://doi.org/10.1038/35048692,"Arabidopsis Genome Initiative (2000) Analysis of the genome sequence of the flowering plant Arabidopsis thaliana. Nature 408, 796",
+fruit-fly,Fruit fly,animal,1.8e8,13600,https://doi.org/10.1126/science.287.5461.2185,"Adams M.D. et al. (2000) The genome sequence of Drosophila melanogaster. Science 287, 2185",
+human,Human (T2T),animal,3.055e9,19969,https://doi.org/10.1126/science.abj6987,"Nurk S. et al. (2022) The complete sequence of a human genome. Science 376, 44",About 1 m of DNA per cell copy
+axolotl,Axolotl,animal,3.2e10,23000,https://doi.org/10.1038/nature25458,"Nowoshilow S. et al. (2018) The axolotl genome and the evolution of key tissue formation regulators. Nature 554, 50",Gene count approximate
+lungfish,Australian lungfish,animal,4.3e10,31000,https://doi.org/10.1038/s41586-021-03198-8,"Meyer A. et al. (2021) Giant lungfish genome elucidates the conquest of land by vertebrates. Nature 590, 284",Largest sequenced animal genome; gene count approximate
