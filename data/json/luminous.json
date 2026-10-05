@@ -1,0 +1,55 @@
+{
+ "dataset": "luminous",
+ "title": "Luminous intensity",
+ "license": "CC-BY-4.0",
+ "columns": {
+  "id": "Unique id.",
+  "name": "Label.",
+  "panel": "Which panel of the figure.",
+  "category": "Kind.",
+  "value": "Representative value.",
+  "low": "Low end of the reported range; empty if none.",
+  "high": "High end of the reported range; empty if none.",
+  "source_url": "Primary source for the values (journal DOI, agency fact sheet, spec sheet).",
+  "citation": "Short citation: authors, year, title, venue.",
+  "notes": "One line shown in the hover tooltip."
+ },
+ "rows": [
+  {
+   "id": "candle",
+   "name": "Candle",
+   "panel": "intensity",
+   "category": "flame",
+   "value": 1.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://www.bipm.org/en/publications/si-brochure",
+   "citation": "BIPM (2019) The International System of Units (SI Brochure), 9th edition",
+   "notes": "The candela grew out of the candle; a candle is about 1 cd"
+  },
+  {
+   "id": "led-bulb",
+   "name": "LED light bulb (60-100 W equivalent)",
+   "panel": "intensity",
+   "category": "electric",
+   "value": 95.0,
+   "low": 64.0,
+   "high": 127.0,
+   "source_url": "https://www.energy.gov/energysaver/save-electricity-and-fuel/lighting-choices-save-you-money/lumens-and-lighting-facts",
+   "citation": "U.S. Department of Energy, Lumens and the Lighting Facts label",
+   "notes": "800-1600 lm spread over all directions"
+  },
+  {
+   "id": "sun",
+   "name": "Sun",
+   "panel": "intensity",
+   "category": "astro",
+   "value": 2.83e+27,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1177/14771535850170040401",
+   "citation": "Littlefair P.J. (1985) The luminous efficacy of daylight: a review. Lighting Res Technol 17, 162",
+   "notes": "Computed: 3.828e26 W x about 93 lm/W / 4 pi"
+  }
+ ]
+}
