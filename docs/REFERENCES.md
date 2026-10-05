@@ -177,7 +177,16 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 4. Rakov V.A. & Uman M.A. (2003) Lightning: Physics and Effects. Cambridge University Press. <https://doi.org/10.1017/CBO9781107340886>
 5. Feynman R.P., Leighton R.B. & Sands M. The Feynman Lectures on Physics, Vol. II, ch. 9: Electricity in the atmosphere. <https://www.feynmanlectures.caltech.edu/II_09.html>
 6. Neslusan L. (2001) On the global electrostatic charge of stars. A&A 372, 913. <https://doi.org/10.1051/0004-6361:20010533>
-7. Schwinger J. (1951) On gauge invariance and vacuum polarization. Phys Rev 82, 664. <https://doi.org/10.1103/PhysRev.82.664>
+7. Horanyi M. (1996) Charged dust dynamics in the solar system. ARA&A 34, 383. <https://doi.org/10.1146/annurev.astro.34.1.383>
+8. Duft D. et al. (2003) Rayleigh jets from levitated microdroplets. Nature 421, 128. <https://doi.org/10.1038/421128a>
+9. Takahashi T. (1973) Measurement of electric charge of cloud droplets, drizzle, and raindrops. Rev Geophys 11, 903. <https://doi.org/10.1029/RG011i004p00903>
+10. IEC 61000-4-2:2008 Electromagnetic compatibility: electrostatic discharge immunity test (150 pF body charged to up to 15 kV). <https://webstore.iec.ch/en/publication/4189>
+11. Olsen R.C. & Purvis C.K. (1983) Observations of charging dynamics. J Geophys Res 88, 5657. <https://doi.org/10.1029/JA088iA07p05657>
+12. Bruning O.S. et al. (eds.) (2004) LHC Design Report Vol. 1: The LHC Main Ring. CERN-2004-003. <https://doi.org/10.5170/CERN-2004-003-V-1>
+13. Zajacek M. et al. (2018) On the charge of the Galactic centre black hole. MNRAS 480, 4408. <https://doi.org/10.1093/mnras/sty2182>
+14. Reissner H. (1916) Uber die Eigengravitation des elektrischen Feldes nach der Einsteinschen Theorie. Ann Phys 355, 106. <https://doi.org/10.1002/andp.19163550905>
+15. Schwinger J. (1951) On gauge invariance and vacuum polarization. Phys Rev 82, 664. <https://doi.org/10.1103/PhysRev.82.664>
+16. Rayleigh, Lord (1882) On the equilibrium of liquid conducting masses charged with electricity. Phil Mag 14, 184. <https://doi.org/10.1080/14786448208628425>
 
 ## voltage
 
@@ -188,7 +197,14 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 5. Rakov V.A. & Uman M.A. (2003) Lightning: Physics and Effects. Cambridge University Press. <https://doi.org/10.1017/CBO9781107340886>
 6. Rycroft M.J., Israelsson S. & Price C. (2000) The global atmospheric electric circuit, solar activity and climate change. J Atmos Sol-Terr Phys 62, 1563. <https://doi.org/10.1016/S1364-6826(00)00112-7>
 7. Goldreich P. & Julian W.H. (1969) Pulsar electrodynamics. ApJ 157, 869. <https://doi.org/10.1086/150119>
-8. Schwinger J. (1951) On gauge invariance and vacuum polarization. Phys Rev 82, 664. <https://doi.org/10.1103/PhysRev.82.664>
+8. Zorova L.D. et al. (2018) Mitochondrial membrane potential. Anal Biochem 552, 50. <https://doi.org/10.1016/j.ab.2017.07.009>
+9. IEC 61000-4-2:2008 Electromagnetic compatibility: electrostatic discharge immunity test. <https://webstore.iec.ch/en/publication/4189>
+10. Feynman R.P., Leighton R.B. & Sands M. The Feynman Lectures on Physics, Vol. II, ch. 9: Electricity in the atmosphere. <https://www.feynmanlectures.caltech.edu/II_09.html>
+11. Boyle C.B., Reiff P.H. & Hairston M.R. (1997) Empirical polar cap potentials. J Geophys Res 102, 111. <https://doi.org/10.1029/96JA01742>
+12. Goldreich P. & Lynden-Bell D. (1969) Io, a Jovian unipolar inductor. ApJ 156, 59. <https://doi.org/10.1086/149947>
+13. Blandford R.D. & Znajek R.L. (1977) Electromagnetic extraction of energy from Kerr black holes. MNRAS 179, 433. <https://doi.org/10.1093/mnras/179.3.433>
+14. Reissner H. (1916) Uber die Eigengravitation des elektrischen Feldes nach der Einsteinschen Theorie. Ann Phys 355, 106. <https://doi.org/10.1002/andp.19163550905>
+15. Schwinger J. (1951) On gauge invariance and vacuum polarization. Phys Rev 82, 664. <https://doi.org/10.1103/PhysRev.82.664>
 
 ## magnetic
 
@@ -202,6 +218,15 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 8. Ferrario L., de Martino D. & Gansicke B.T. (2015) Magnetic white dwarfs. Space Sci Rev 191, 111. <https://doi.org/10.1007/s11214-015-0152-0>
 9. Manchester R.N. et al. (2005) The Australia Telescope National Facility pulsar catalogue. AJ 129, 1993. <https://doi.org/10.1086/428488>
 10. Olausen S.A. & Kaspi V.M. (2014) The McGill magnetar catalog. ApJS 212, 6. <https://doi.org/10.1088/0067-0049/212/1/6>
+11. Skokov V., Illarionov A.Yu. & Toneev V. (2009) Estimate of the magnetic field strength in heavy-ion collisions. Int J Mod Phys A 24, 5925. <https://doi.org/10.1142/S0217751X09047570>
+12. Tatarakis M. et al. (2002) Measuring huge magnetic fields. Nature 415, 280. <https://doi.org/10.1038/415280a>
+13. Sagawa M. et al. (1984) New material for permanent magnets on a base of Nd and Fe. J Appl Phys 55, 2083. <https://doi.org/10.1063/1.333572>
+14. Cohen D. (1967) Magnetic fields around the torso: production by electrical activity of the human heart. Science 156, 652. <https://doi.org/10.1126/science.156.3775.652>
+15. Gillet N. et al. (2010) Fast torsional waves and strong magnetic field within the Earth's core. Nature 465, 74. <https://doi.org/10.1038/nature09010>
+16. Connerney J.E.P. et al. (2018) A new model of Jupiter's magnetic field from Juno's first nine orbits. GRL 45, 2590. <https://doi.org/10.1002/2018GL077312>
+17. Owens M.J. & Forsyth R.J. (2013) The heliospheric magnetic field. Living Rev Sol Phys 10, 5. <https://doi.org/10.12942/lrsp-2013-5>
+18. Carilli C.L. & Taylor G.B. (2002) Cluster magnetic fields. ARA&A 40, 319. <https://doi.org/10.1146/annurev.astro.40.060401.093852>
+19. Neronov A. & Vovk I. (2010) Evidence for strong extragalactic magnetic fields from Fermi observations of TeV blazars. Science 328, 73. <https://doi.org/10.1126/science.1184192>
 
 ## radio
 
@@ -219,6 +244,12 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 1. BIPM (2019) The International System of Units (SI Brochure), 9th edition. <https://www.bipm.org/en/publications/si-brochure>
 2. U.S. Department of Energy, Lumens and the Lighting Facts label. <https://www.energy.gov/energysaver/save-electricity-and-fuel/lighting-choices-save-you-money/lumens-and-lighting-facts>
 3. Littlefair P.J. (1985) The luminous efficacy of daylight: a review. Lighting Res Technol 17, 162. <https://doi.org/10.1177/14771535850170040401>
+4. UNECE Regulation No 48: installation of lighting and light-signalling devices, para 6.1.9.1 (aggregate main beam at most 430000 cd). <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:42011X1206(03)>
+5. Kyba C.C.M., Mohar A. & Posch T. (2017) How bright is moonlight? Astronomy & Geophysics 58, 1.31. <https://doi.org/10.1093/astrogeo/atx025>
+6. van Leeuwen F. (2007) Validation of the new Hipparcos reduction. A&A 474, 653. <https://doi.org/10.1051/0004-6361:20078357>
+7. Phillips M.M. (1993) The absolute magnitudes of Type Ia supernovae. ApJ 413, L105. <https://doi.org/10.1086/186970>
+8. Schmidt M. (1963) 3C 273: a star-like object with large red-shift. Nature 197, 1040. <https://doi.org/10.1038/1971040a0>
+9. Bloom J.S. et al. (2009) Observations of the naked-eye GRB 080319B: implications of nature's brightest explosion. ApJ 691, 723. <https://doi.org/10.1088/0004-637X/691/1/723>
 
 ## black_holes
 

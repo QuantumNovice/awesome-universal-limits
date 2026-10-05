@@ -177,3 +177,42 @@ def test_landauer_brain():
 
 def test_reading_ceiling():
     assert L.reading_ceiling(1.0) == rel(8766, rel=1e-3)
+
+
+# --- electromagnetism -----------------------------------------------------------
+
+
+def test_schwinger_field():
+    # m_e^2 c^3 / (e hbar) = 1.3233e18 V/m
+    assert L.E_SCHWINGER == rel(1.3233e18, rel=1e-3)
+
+
+def test_charge_collapse_per_metre():
+    # c^2 sqrt(4 pi eps0 / G) = 8.988e16 * sqrt(1.1127e-10 / 6.6743e-11) = 1.1605e17 C per metre of radius
+    assert L.charge_collapse(2.0) == rel(1.1605e17, rel=1e-3)
+
+
+def test_charged_sphere_at_collapse_has_planck_voltage():
+    # V = Q / (4 pi eps0 r) at the collapse charge is c^2 / sqrt(4 pi eps0 G) = 1.043e27 V, for any size
+    for d in (1e-10, 1.0, 1e10):
+        v = L.charge_collapse(d) / (4 * math.pi * k.epsilon_0 * d / 2)
+        assert v == rel(L.PLANCK_VOLTAGE)
+    assert L.PLANCK_VOLTAGE == rel(1.043e27, rel=1e-3)
+
+
+def test_gravity_beats_schwinger_above_sun_size():
+    # 4 pi eps0 r^2 E_S = r c^2 sqrt(4 pi eps0 / G)  ->  r = c^2 / (E_S sqrt(4 pi eps0 G)) = 7.9e8 m
+    r = k.c**2 / (L.E_SCHWINGER * math.sqrt(4 * math.pi * k.epsilon_0 * k.G))
+    assert r == rel(7.9e8, rel=0.01)
+    assert L.charge_collapse(4 * r) < L.charge_for_field(4 * r, L.E_SCHWINGER)
+
+
+def test_planck_charge_is_e_over_sqrt_alpha():
+    alpha = k.e**2 / (4 * math.pi * k.epsilon_0 * k.hbar * k.c)
+    assert L.PLANCK_CHARGE == rel(k.e / math.sqrt(alpha))
+    assert L.PLANCK_CHARGE / k.e == rel(11.7, rel=0.01)
+
+
+def test_rayleigh_limit_millimetre_water_drop():
+    # 8 pi sqrt(8.854e-12 * 0.072 * (1e-3)^3) = 25.13 * 2.525e-11 = 6.35e-10 C
+    assert L.charge_rayleigh(2e-3) == rel(6.35e-10, rel=0.01)

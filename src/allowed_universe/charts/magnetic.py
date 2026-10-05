@@ -25,7 +25,7 @@ def lines() -> list[Line]:
             "upper",
             y=L.field_collapse,
             forbidden="Forbidden: the field's own energy collapses into a black hole",
-            forbidden_xy=(1e2, 1e25),
+            forbidden_xy=(1e14, 1e19),
             formula="sqrt(3 mu0 / (pi G)) c^2 / d",
         ),
         Line(
@@ -56,11 +56,11 @@ def spec() -> ChartSpec:
         title="How strong can a magnetic field be?",
         xlabel="Size of the magnetised region, m",
         ylabel="Magnetic field, T",
-        xlim=(1e-3, 1e18),
+        xlim=(1e-16, 1e24),
         ylim=(1e-22, 1e30),
         lines=lines(),
         objects=obj,
         categories=CATEGORIES,
-        legend_loc="lower right",
+        legend_loc="center right",
         footnote="Above 4.4×10⁹ T an electron's cyclotron energy exceeds its rest energy; magnetars live there.",
     )

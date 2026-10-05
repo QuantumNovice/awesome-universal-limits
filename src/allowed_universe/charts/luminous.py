@@ -11,7 +11,7 @@ DATASETS = ("luminous",)
 CATEGORIES = {
     "flame": ("Flames", 1),
     "electric": ("Electric light", 5),
-    "astro": ("Stars", 2),
+    "astro": ("Space", 2),
     "physics": ("Physics", 4),
 }
 

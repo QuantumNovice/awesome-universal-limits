@@ -12,9 +12,9 @@ DATASETS = ("charge",)
 
 CATEGORIES = {
     "particle": ("Particles and nuclei", 4),
-    "lab": ("Laboratory", 5),
+    "lab": ("Laboratory and everyday", 5),
     "earth": ("Earth and lightning", 0),
-    "astro": ("Stars", 2),
+    "astro": ("Space", 2),
 }
 
 
@@ -32,6 +32,26 @@ def lines() -> list[Line]:
             citation="Tiesinga E. et al., CODATA 2022 recommended values, NIST",
         ),
         Line(
+            "collapse",
+            "Field energy would form a black hole (Reissner–Nordström): Q = (d/2) c² √(4πε₀/G)",
+            "upper",
+            y=L.charge_collapse,
+            forbidden="Forbidden: its field collapses into a black hole",
+            forbidden_xy=(1e6, 1e28),
+            forbidden_rotation=0,
+            formula="(d/2) c^2 sqrt(4 pi eps0 / G)",
+            source_url="https://doi.org/10.1002/andp.19163550905",
+            citation="Reissner H. (1916) Uber die Eigengravitation des elektrischen Feldes nach der Einsteinschen Theorie. Ann Phys 355, 106",
+        ),
+        Line(
+            "planck",
+            "Planck charge √(4πε₀ħc) ≈ 11.7 e",
+            "reference",
+            y=L.PLANCK_CHARGE,
+            dashed=True,
+            formula="sqrt(4 pi eps0 hbar c)",
+        ),
+        Line(
             "schwinger",
             "Surface field at the Schwinger limit (1.3×10¹⁸ V/m): vacuum sparks pairs",
             "gravity",
@@ -46,6 +66,16 @@ def lines() -> list[Line]:
             "material",
             y=lambda d: L.charge_for_field(d, L.E_AIR_BREAKDOWN),
             formula="4 pi eps0 (d/2)^2 x 3e6 V/m",
+        ),
+        Line(
+            "rayleigh",
+            "Rayleigh limit of a water drop: q = 8π√(ε₀γr³)",
+            "material",
+            y=L.charge_rayleigh,
+            dashed=True,
+            formula="8 pi sqrt(eps0 gamma (d/2)^3), gamma = 0.072 N/m",
+            source_url="https://doi.org/10.1080/14786448208628425",
+            citation="Rayleigh, Lord (1882) On the equilibrium of liquid conducting masses charged with electricity. Phil Mag 14, 184",
         ),
     ]
 
@@ -65,5 +95,5 @@ def spec() -> ChartSpec:
         objects=obj,
         categories=CATEGORIES,
         legend_loc="upper left",
-        footnote="Nuclei exceed the Schwinger line: the vacuum only sparks if the strong field extends beyond the electron's Compton wavelength.",
+        footnote="Nuclei exceed the Schwinger line (the vacuum only sparks if the field extends beyond the electron's Compton wavelength, i.e. Z above about 173); above Sun size gravity, not QED, sets the ceiling.",
     )

@@ -50,6 +50,78 @@
    "source_url": "https://doi.org/10.1177/14771535850170040401",
    "citation": "Littlefair P.J. (1985) The luminous efficacy of daylight: a review. Lighting Res Technol 17, 162",
    "notes": "Computed: 3.828e26 W x about 93 lm/W / 4 pi"
+  },
+  {
+   "id": "headlamps",
+   "name": "Car main-beam headlamps (legal maximum)",
+   "panel": "intensity",
+   "category": "electric",
+   "value": 430000.0,
+   "low": null,
+   "high": null,
+   "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:42011X1206(03)",
+   "citation": "UNECE Regulation No 48: installation of lighting and light-signalling devices, para 6.1.9.1 (aggregate main beam at most 430000 cd)",
+   "notes": "All main beams together may not exceed 430000 cd"
+  },
+  {
+   "id": "full-moon",
+   "name": "Full Moon (as seen from Earth)",
+   "panel": "intensity",
+   "category": "astro",
+   "value": 1.4e+16,
+   "low": 7100000000000000.0,
+   "high": 3.9e+16,
+   "source_url": "https://doi.org/10.1093/astrogeo/atx025",
+   "citation": "Kyba C.C.M., Mohar A. & Posch T. (2017) How bright is moonlight? Astronomy & Geophysics 58, 1.31",
+   "notes": "Computed: 0.05-0.32 lx at the ground times the distance squared"
+  },
+  {
+   "id": "sirius",
+   "name": "Sirius A",
+   "panel": "intensity",
+   "category": "astro",
+   "value": 6.4e+28,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1051/0004-6361:20078357",
+   "citation": "van Leeuwen F. (2007) Validation of the new Hipparcos reduction. A&A 474, 653",
+   "notes": "Computed from V = -1.46 at 2.64 pc (M_V = 1.43) and the Sun's M_V = 4.81 (Willmer 2018)"
+  },
+  {
+   "id": "supernova-ia",
+   "name": "Type Ia supernova at peak",
+   "panel": "intensity",
+   "category": "astro",
+   "value": 1.2e+37,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1086/186970",
+   "citation": "Phillips M.M. (1993) The absolute magnitudes of Type Ia supernovae. ApJ 413, L105",
+   "notes": "Computed from peak M_V about -19.3: one star outshines a galaxy for weeks"
+  },
+  {
+   "id": "quasar-3c273",
+   "name": "Quasar 3C 273",
+   "panel": "intensity",
+   "category": "astro",
+   "value": 9.6e+39,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1038/1971040a0",
+   "citation": "Schmidt M. (1963) 3C 273: a star-like object with large red-shift. Nature 197, 1040",
+   "notes": "Computed from V = 12.9 at z = 0.158 (luminosity distance about 750 Mpc): M_V about -26.5"
+  },
+  {
+   "id": "grb-080319b",
+   "name": "Gamma-ray burst GRB 080319B (optical peak)",
+   "panel": "intensity",
+   "category": "astro",
+   "value": 6.5e+44,
+   "low": null,
+   "high": null,
+   "source_url": "https://doi.org/10.1088/0004-637X/691/1/723",
+   "citation": "Bloom J.S. et al. (2009) Observations of the naked-eye GRB 080319B: implications of nature's brightest explosion. ApJ 691, 723",
+   "notes": "Peak visual magnitude 5.3 from 6 Gpc: M about -38.6 (computed): the brightest optical event ever recorded"
   }
  ]
 }

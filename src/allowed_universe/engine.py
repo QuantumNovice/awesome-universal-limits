@@ -136,7 +136,7 @@ def _line_style(line: Line):
     if line.kind == "lower":
         return {"color": style.BLUE, "lw": 2.5, "ls": "--" if line.dashed else "-"}
     if line.kind == "material":
-        return {"color": style.AMBER, "lw": 1.8, "ls": ":"}
+        return {"color": style.AMBER, "lw": 1.8, "ls": "--" if line.dashed else ":"}
     if line.kind == "gravity":
         return {"color": style.GREY, "lw": 1.6, "ls": "--"}
     return {"color": style.GREY, "lw": 1.4, "ls": "-."}

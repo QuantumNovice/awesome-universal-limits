@@ -328,6 +328,36 @@ def field_collapse(d):
     return math.sqrt(3 * MU_0 / (math.pi * k.G)) * k.c**2 / np.asarray(d, dtype=float)
 
 
+def charge_collapse(d):
+    """Charge whose own electric field would form a black hole around a sphere of diameter d.
+
+    Field energy outside r = d/2 is Q^2 / (8 pi eps0 r); as mass, it fits inside its
+    Schwarzschild radius once G Q^2 / (4 pi eps0 c^4 r) > r, i.e. the Reissner-Nordstrom
+    charge radius exceeds r:  Q = (d/2) c^2 sqrt(4 pi eps0 / G)  (~1.16e17 C per metre of radius).
+    """
+    return np.asarray(d, dtype=float) / 2 * k.c**2 * math.sqrt(4 * math.pi * k.epsilon_0 / k.G)
+
+
+# Potential of a sphere at that charge: Q / (4 pi eps0 r) = c^2 / sqrt(4 pi eps0 G), the
+# Planck voltage (~1.04e27 V). It does not depend on size, so it caps every gap.
+PLANCK_VOLTAGE = k.c**2 / math.sqrt(4 * math.pi * k.epsilon_0 * k.G)
+
+# Planck charge sqrt(4 pi eps0 hbar c) = e / sqrt(alpha) ~ 11.7 e: two such charges at any
+# distance r have Coulomb energy hbar c / r.
+PLANCK_CHARGE = math.sqrt(4 * math.pi * k.epsilon_0 * k.hbar * k.c)
+
+SURFACE_TENSION_WATER = 0.072  # N/m near 25 C
+
+
+def charge_rayleigh(d, gamma=SURFACE_TENSION_WATER):
+    """Rayleigh (1882) limit of a charged liquid drop of diameter d: q = 8 pi sqrt(eps0 gamma r^3).
+
+    Above it the drop's electric pressure beats surface tension and it sprays out jets.
+    """
+    r = np.asarray(d, dtype=float) / 2
+    return 8 * np.pi * np.sqrt(k.epsilon_0 * gamma * r**3)
+
+
 def pulsar_dipole_field(period_s, pdot):
     """Surface dipole field from spin-down: B ~ 3.2e15 T sqrt(P Pdot) (3.2e19 G)."""
     return 3.2e15 * np.sqrt(np.asarray(period_s, dtype=float) * pdot)
