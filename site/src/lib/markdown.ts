@@ -1,7 +1,7 @@
 // A deliberately small Markdown renderer for the explainers: headings, paragraphs,
 // lists, bold, italics, inline code and links. Input is escaped first.
 
-export const REPO = "https://github.com/QuantumNovice/the-allowed-universe";
+export const REPO = "https://github.com/QuantumNovice/awesome-universal-limits";
 
 function escapeHtml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");

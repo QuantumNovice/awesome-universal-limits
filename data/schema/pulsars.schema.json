@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/pulsars.schema.json",
+  "$id": "https://github.com/QuantumNovice/awesome-universal-limits/data/schema/pulsars.schema.json",
   "title": "Pulsars and magnetars: period vs spin-down rate",
   "type": "object",
   "properties": {

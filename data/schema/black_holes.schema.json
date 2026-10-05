@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/black_holes.schema.json",
+  "$id": "https://github.com/QuantumNovice/awesome-universal-limits/data/schema/black_holes.schema.json",
   "title": "Black hole spin vs mass",
   "type": "object",
   "properties": {

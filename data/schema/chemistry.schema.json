@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/chemistry.schema.json",
+  "$id": "https://github.com/QuantumNovice/awesome-universal-limits/data/schema/chemistry.schema.json",
   "title": "Binding energy vs size",
   "type": "object",
   "properties": {

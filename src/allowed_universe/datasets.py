@@ -463,7 +463,7 @@ def schema_for(name: str) -> dict:
         props[col] = p
     return {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": f"https://github.com/QuantumNovice/the-allowed-universe/data/schema/{name}.schema.json",
+        "$id": f"https://github.com/QuantumNovice/awesome-universal-limits/data/schema/{name}.schema.json",
         "title": ds["title"],
         "type": "object",
         "properties": props,

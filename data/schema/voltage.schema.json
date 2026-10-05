@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/voltage.schema.json",
+  "$id": "https://github.com/QuantumNovice/awesome-universal-limits/data/schema/voltage.schema.json",
   "title": "Voltage vs gap size",
   "type": "object",
   "properties": {

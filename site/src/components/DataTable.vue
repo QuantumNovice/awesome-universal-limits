@@ -64,7 +64,7 @@ const rows = computed<Row[]>(() => {
     Download:
     <template v-for="ds in chart.datasets" :key="ds">
       <a :href="asset(`data/json/${ds}.json`)" download>{{ ds }}.json</a>
-      <a :href="`https://github.com/QuantumNovice/the-allowed-universe/blob/main/data/${ds}.csv`" target="_blank" rel="noopener"
+      <a :href="`https://github.com/QuantumNovice/awesome-universal-limits/blob/main/data/${ds}.csv`" target="_blank" rel="noopener"
         >{{ ds }}.csv</a
       >
     </template>

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/volumes.schema.json",
+  "$id": "https://github.com/QuantumNovice/awesome-universal-limits/data/schema/volumes.schema.json",
   "title": "Gas and water volumes: mass vs volume",
   "type": "object",
   "properties": {

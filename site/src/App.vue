@@ -62,7 +62,7 @@ watch(route, (r) => {
       <p v-else class="loading">Loading…</p>
       <footer class="foot">
         Code MIT · data and figures CC BY 4.0 ·
-        <a href="https://github.com/QuantumNovice/the-allowed-universe" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/QuantumNovice/awesome-universal-limits" target="_blank" rel="noopener">GitHub</a>
       </footer>
     </main>
   </div>

@@ -26,7 +26,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from allowed_universe import references  # noqa: E402
 
-UA = "the-allowed-universe-source-check/0.1 (https://github.com/QuantumNovice/the-allowed-universe)"
+UA = "the-allowed-universe-source-check/0.1 (https://github.com/QuantumNovice/awesome-universal-limits)"
 
 
 def _get(url: str, timeout: float = 30):

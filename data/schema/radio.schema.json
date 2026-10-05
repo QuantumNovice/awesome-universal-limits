@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/QuantumNovice/the-allowed-universe/data/schema/radio.schema.json",
+  "$id": "https://github.com/QuantumNovice/awesome-universal-limits/data/schema/radio.schema.json",
   "title": "Radio links: transmit power vs distance",
   "type": "object",
   "properties": {

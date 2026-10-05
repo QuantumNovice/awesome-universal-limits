@@ -4,10 +4,10 @@
 
 ![How fast can things spin?](figures/spin.png)
 
-[![CI](https://github.com/QuantumNovice/the-allowed-universe/actions/workflows/ci.yml/badge.svg)](https://github.com/QuantumNovice/the-allowed-universe/actions/workflows/ci.yml)
+[![CI](https://github.com/QuantumNovice/awesome-universal-limits/actions/workflows/ci.yml/badge.svg)](https://github.com/QuantumNovice/awesome-universal-limits/actions/workflows/ci.yml)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
-[![Website](https://img.shields.io/badge/site-GitHub%20Pages-6250d6.svg)](https://quantumnovice.github.io/the-allowed-universe/)
+[![Website](https://img.shields.io/badge/site-GitHub%20Pages-6250d6.svg)](https://quantumnovice.github.io/awesome-universal-limits/)
 
 ## What am I looking at?
 

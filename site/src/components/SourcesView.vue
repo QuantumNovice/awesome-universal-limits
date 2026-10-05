@@ -22,11 +22,11 @@ onMounted(async () => {
     <p>
       {{ total || "Every" }} distinct sources back the values and limit lines on this site. Journal sources are DOIs,
       checked against Crossref by <code>make sources</code>. The same list is in
-      <a href="https://github.com/QuantumNovice/the-allowed-universe/blob/main/docs/REFERENCES.md" target="_blank" rel="noopener"
+      <a href="https://github.com/QuantumNovice/awesome-universal-limits/blob/main/docs/REFERENCES.md" target="_blank" rel="noopener"
         >docs/REFERENCES.md</a
       >
       and as BibTeX in
-      <a href="https://github.com/QuantumNovice/the-allowed-universe/blob/main/docs/references.bib" target="_blank" rel="noopener"
+      <a href="https://github.com/QuantumNovice/awesome-universal-limits/blob/main/docs/references.bib" target="_blank" rel="noopener"
         >docs/references.bib</a
       >.
     </p>
