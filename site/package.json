@@ -1,0 +1,21 @@
+{
+  "name": "the-allowed-universe-site",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@observablehq/plot": "^0.6.17",
+    "vue": "^3.5.43"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.3",
+    "vue-tsc": "^2.2.12"
+  }
+}
