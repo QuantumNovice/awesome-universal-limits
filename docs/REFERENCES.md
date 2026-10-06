@@ -508,7 +508,9 @@ every file in `data/` and from the constants used by the limit lines. Do not edi
 26. Chollet F. et al. (2024) ARC Prize 2024: technical report. arXiv:2412.04604. <https://arxiv.org/abs/2412.04604>
 27. ARC Prize (2024) OpenAI o3 breakthrough high score on ARC-AGI-Pub. <https://arcprize.org/blog/oai-o3-pub-breakthrough>
 28. Gema A.P. et al. (2025) Are we done with MMLU? NAACL; arXiv:2406.04127. <https://arxiv.org/abs/2406.04127>
-29. LeGris S. et al. (2024) H-ARC: a robust estimate of human performance on the Abstraction and Reasoning Corpus benchmark. arXiv:2409.01374. <https://arxiv.org/abs/2409.01374>
+29. Cobbe K. et al. (2021) Training verifiers to solve math word problems. arXiv:2110.14168. <https://arxiv.org/abs/2110.14168>
+30. Jimenez C.E. et al. (2024) SWE-bench: can language models resolve real-world GitHub issues? ICLR 2024; arXiv:2310.06770. <https://arxiv.org/abs/2310.06770>
+31. LeGris S. et al. (2024) H-ARC: a robust estimate of human performance on the Abstraction and Reasoning Corpus benchmark. arXiv:2409.01374. <https://arxiv.org/abs/2409.01374>
 
 ## cognition
 

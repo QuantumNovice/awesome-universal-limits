@@ -84,6 +84,26 @@
    "notes": "Non-experts with web access reach 34 percent"
   },
   {
+   "id": "gsm8k-human",
+   "benchmark": "gsm8k",
+   "level": "human",
+   "score_pct": 92.0,
+   "name": "Humans (trained annotators)",
+   "source_url": "https://arxiv.org/abs/2110.14168",
+   "citation": "Cobbe K. et al. (2021) Training verifiers to solve math word problems. arXiv:2110.14168",
+   "notes": "Reported human accuracy"
+  },
+  {
+   "id": "swebench-human",
+   "benchmark": "swebench",
+   "level": "human",
+   "score_pct": 100.0,
+   "name": "Human-resolved benchmark issues",
+   "source_url": "https://arxiv.org/abs/2310.06770",
+   "citation": "Jimenez C.E. et al. (2024) SWE-bench: can language models resolve real-world GitHub issues? ICLR 2024; arXiv:2310.06770",
+   "notes": "Benchmark tasks are drawn from issues resolved by human developers"
+  },
+  {
    "id": "arc-human",
    "benchmark": "arcagi",
    "level": "human",
